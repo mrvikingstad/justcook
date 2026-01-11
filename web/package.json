@@ -29,6 +29,7 @@
 		"vite": "^7.2.6"
 	},
 	"dependencies": {
+		"@aws-sdk/client-s3": "^3.966.0",
 		"better-auth": "^1.2.0",
 		"drizzle-orm": "^0.45.1",
 		"lucide-svelte": "^0.562.0",
