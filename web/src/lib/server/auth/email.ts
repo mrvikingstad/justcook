@@ -7,7 +7,7 @@ if (!RESEND_API_KEY) {
 }
 
 const resend = new Resend(RESEND_API_KEY);
-const fromEmail = env.EMAIL_FROM || 'Just Cook <noreply@justcook.app>';
+const fromEmail = env.EMAIL_FROM || 'Just Cook <noreply@getcomet.dev>';
 
 export async function sendMagicLinkEmail(email: string, url: string) {
 	await resend.emails.send({

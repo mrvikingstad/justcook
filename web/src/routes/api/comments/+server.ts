@@ -2,8 +2,70 @@ import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
 import { comments, recipes, user } from '$lib/server/db/schema';
-import { eq, sql } from 'drizzle-orm';
+import { eq, sql, desc } from 'drizzle-orm';
 import { moderateComment } from '$lib/server/moderation';
+
+export const GET: RequestHandler = async ({ url, locals }) => {
+	const recipeId = url.searchParams.get('recipeId');
+	const slug = url.searchParams.get('slug');
+
+	let targetRecipeId = recipeId;
+
+	// If slug provided, lookup recipe ID
+	if (!targetRecipeId && slug) {
+		const [recipe] = await db
+			.select({ id: recipes.id, authorId: recipes.authorId })
+			.from(recipes)
+			.where(eq(recipes.slug, slug))
+			.limit(1);
+
+		if (!recipe) {
+			return json({ error: 'Recipe not found' }, { status: 404 });
+		}
+		targetRecipeId = recipe.id;
+	}
+
+	if (!targetRecipeId) {
+		return json({ error: 'recipeId or slug is required' }, { status: 400 });
+	}
+
+	// Get recipe author for marking author comments
+	const [recipe] = await db
+		.select({ authorId: recipes.authorId })
+		.from(recipes)
+		.where(eq(recipes.id, targetRecipeId))
+		.limit(1);
+
+	// Get comments with author info
+	const commentList = await db
+		.select({
+			id: comments.id,
+			content: comments.content,
+			createdAt: comments.createdAt,
+			userId: comments.userId,
+			userName: user.name,
+			userImage: user.image,
+			fullName: user.fullName,
+			photoUrl: user.photoUrl
+		})
+		.from(comments)
+		.leftJoin(user, eq(comments.userId, user.id))
+		.where(eq(comments.recipeId, targetRecipeId))
+		.orderBy(desc(comments.createdAt));
+
+	return json({
+		comments: commentList.map((c) => ({
+			id: c.id,
+			content: c.content,
+			createdAt: c.createdAt,
+			authorId: c.userId,
+			authorName: c.fullName || c.userName || 'Anonymous',
+			authorAvatar: c.photoUrl || c.userImage || null,
+			isRecipeAuthor: c.userId === recipe?.authorId,
+			isOwn: locals.user?.id === c.userId
+		}))
+	});
+};
 
 export const POST: RequestHandler = async ({ request, locals }) => {
 	if (!locals.user) {

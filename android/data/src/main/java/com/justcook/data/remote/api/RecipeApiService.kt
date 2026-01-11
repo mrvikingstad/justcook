@@ -29,16 +29,16 @@ import retrofit2.http.Query
 
 interface RecipeApiService {
 
-    @GET("recipes/{slug}")
+    @GET("api/recipes/slug/{slug}")
     suspend fun getRecipeBySlug(@Path("slug") slug: String): RecipeDetailResponseDto
 
-    @GET("trending")
+    @GET("api/trending")
     suspend fun getTrendingRecipes(@Query("lang") language: String = "en"): TrendingResponseDto
 
-    @GET("discover")
+    @GET("api/discover")
     suspend fun getDiscoverRecipes(@Query("lang") language: String = "en"): DiscoverResponseDto
 
-    @GET("recipes")
+    @GET("api/recipes")
     suspend fun searchRecipes(
         @Query("q") query: String,
         @Query("cuisine") cuisine: String? = null,
@@ -64,11 +64,8 @@ interface RecipeApiService {
     @POST("api/votes")
     suspend fun vote(@Body request: VoteRequestDto): VoteResponseDto
 
-    @GET("chef/{username}")
+    @GET("api/chef/{username}")
     suspend fun getChefProfile(@Path("username") username: String): ChefProfileResponseDto
-
-    @GET("trending/chefs")
-    suspend fun getTrendingChefs(): TrendingChefsResponseDto
 
     @GET("api/recipes/author/{userId}")
     suspend fun getRecipesByAuthor(@Path("userId") userId: String): RecipeListResponseDto
@@ -83,8 +80,8 @@ interface RecipeApiService {
     suspend fun getFollowing(): FollowingResponseDto
 
     // Comments
-    @GET("recipes/{slug}/comments")
-    suspend fun getComments(@Path("slug") slug: String): CommentsResponseDto
+    @GET("api/comments")
+    suspend fun getComments(@Query("slug") slug: String): CommentsResponseDto
 
     @POST("api/comments")
     suspend fun createComment(@Body request: CreateCommentRequestDto): CreateCommentResponseDto

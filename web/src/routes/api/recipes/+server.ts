@@ -1,9 +1,113 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
-import { recipes, ingredients, steps } from '$lib/server/db/schema';
-import { eq } from 'drizzle-orm';
+import { recipes, ingredients, steps, user, votes } from '$lib/server/db/schema';
+import { eq, and, ilike, sql, desc, or } from 'drizzle-orm';
 import { moderateRecipe } from '$lib/server/moderation';
+
+export const GET: RequestHandler = async ({ url }) => {
+	const query = url.searchParams.get('q') || '';
+	const cuisine = url.searchParams.get('cuisine');
+	const difficulty = url.searchParams.get('difficulty');
+	const tag = url.searchParams.get('tag');
+	const lang = url.searchParams.get('lang') || 'en';
+	const page = parseInt(url.searchParams.get('page') || '1');
+	const limit = Math.min(parseInt(url.searchParams.get('limit') || '20'), 50);
+	const offset = (page - 1) * limit;
+
+	// Build where conditions
+	const conditions = [eq(recipes.isPublished, true)];
+
+	if (query) {
+		conditions.push(
+			or(
+				ilike(recipes.title, `%${query}%`),
+				ilike(recipes.description, `%${query}%`)
+			)!
+		);
+	}
+
+	if (cuisine) {
+		conditions.push(eq(recipes.cuisine, cuisine));
+	}
+
+	if (difficulty) {
+		conditions.push(eq(recipes.difficulty, difficulty));
+	}
+
+	if (tag) {
+		conditions.push(eq(recipes.tag, tag));
+	}
+
+	if (lang) {
+		conditions.push(eq(recipes.language, lang));
+	}
+
+	// Get recipes with vote counts
+	const recipeResults = await db
+		.select({
+			id: recipes.id,
+			slug: recipes.slug,
+			title: recipes.title,
+			description: recipes.description,
+			photoUrl: recipes.photoUrl,
+			prepTimeMinutes: recipes.prepTimeMinutes,
+			cookTimeMinutes: recipes.cookTimeMinutes,
+			difficulty: recipes.difficulty,
+			cuisine: recipes.cuisine,
+			tag: recipes.tag,
+			authorId: recipes.authorId,
+			publishedAt: recipes.publishedAt,
+			upvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)::int`,
+			downvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} < 0 THEN 1 ELSE 0 END), 0)::int`
+		})
+		.from(recipes)
+		.leftJoin(votes, eq(recipes.id, votes.recipeId))
+		.where(and(...conditions))
+		.groupBy(recipes.id)
+		.orderBy(desc(recipes.publishedAt))
+		.limit(limit)
+		.offset(offset);
+
+	// Get authors
+	const authorIds = [...new Set(recipeResults.map((r) => r.authorId))];
+	const authors = authorIds.length > 0
+		? await db
+				.select({
+					userId: user.id,
+					username: user.username,
+					fullName: user.fullName
+				})
+				.from(user)
+				.where(sql`${user.id} IN ${authorIds}`)
+		: [];
+
+	const authorMap = new Map(authors.map((a) => [a.userId, a]));
+
+	return json({
+		recipes: recipeResults.map((r) => {
+			const author = authorMap.get(r.authorId);
+			return {
+				slug: r.slug,
+				title: r.title,
+				description: r.description,
+				photoUrl: r.photoUrl,
+				authorName: author?.fullName || 'Unknown',
+				authorUsername: author?.username || '',
+				cuisine: r.cuisine,
+				tag: r.tag,
+				difficulty: r.difficulty,
+				prepTimeMinutes: r.prepTimeMinutes,
+				cookTimeMinutes: r.cookTimeMinutes,
+				upvotes: r.upvotes,
+				downvotes: r.downvotes,
+				publishedAt: r.publishedAt
+			};
+		}),
+		page,
+		limit
+	});
+};
 
 function generateSlug(title: string): string {
 	return title
