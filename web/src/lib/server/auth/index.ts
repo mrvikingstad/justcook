@@ -4,14 +4,17 @@ import { magicLink, username } from 'better-auth/plugins';
 import {
 	BETTER_AUTH_SECRET,
 	GOOGLE_CLIENT_ID,
-	GOOGLE_CLIENT_SECRET,
-	APPLE_CLIENT_ID,
-	APPLE_CLIENT_SECRET
+	GOOGLE_CLIENT_SECRET
 } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { PUBLIC_APP_URL } from '$env/static/public';
 import { db } from '../db';
 import * as schema from '../db/schema';
 import { sendMagicLinkEmail, sendPasswordResetEmail, sendVerificationEmail } from './email';
+
+// Apple OAuth is optional - only enabled if credentials are provided
+const APPLE_CLIENT_ID = env.APPLE_CLIENT_ID;
+const APPLE_CLIENT_SECRET = env.APPLE_CLIENT_SECRET;
 
 export const auth = betterAuth({
 	secret: BETTER_AUTH_SECRET,
@@ -51,10 +54,14 @@ export const auth = betterAuth({
 			clientId: GOOGLE_CLIENT_ID,
 			clientSecret: GOOGLE_CLIENT_SECRET
 		},
-		apple: {
-			clientId: APPLE_CLIENT_ID,
-			clientSecret: APPLE_CLIENT_SECRET
-		}
+		...(APPLE_CLIENT_ID && APPLE_CLIENT_SECRET
+			? {
+					apple: {
+						clientId: APPLE_CLIENT_ID,
+						clientSecret: APPLE_CLIENT_SECRET
+					}
+				}
+			: {})
 	},
 
 	plugins: [
@@ -74,7 +81,9 @@ export const auth = betterAuth({
 	account: {
 		accountLinking: {
 			enabled: true,
-			trustedProviders: ['google', 'apple']
+			trustedProviders: APPLE_CLIENT_ID && APPLE_CLIENT_SECRET
+				? ['google', 'apple']
+				: ['google']
 		}
 	}
 });

@@ -20,7 +20,7 @@ android {
             buildConfigField("String", "API_BASE_URL", "\"http://10.0.2.2:5173\"")
         }
         release {
-            buildConfigField("String", "API_BASE_URL", "\"https://justcook.app\"")
+            buildConfigField("String", "API_BASE_URL", "\"https://justcook-production.up.railway.app\"")
         }
     }
 

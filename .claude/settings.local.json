@@ -34,7 +34,11 @@
       "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android''; .\\\\gradlew.bat assembleDebug 2>&1\")",
       "Bash(powershell.exe:*)",
       "Bash(.gradlew.bat assembleDebug)",
-      "Bash(./gradlew.bat assembleDebug)"
+      "Bash(./gradlew.bat assembleDebug)",
+      "Bash(pnpm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
