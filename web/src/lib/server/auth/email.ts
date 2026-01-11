@@ -1,12 +1,13 @@
 import { Resend } from 'resend';
-import { RESEND_API_KEY, EMAIL_FROM } from '$env/static/private';
+import { RESEND_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 if (!RESEND_API_KEY) {
 	console.warn('RESEND_API_KEY is not set - emails will not be sent');
 }
 
 const resend = new Resend(RESEND_API_KEY);
-const fromEmail = EMAIL_FROM || 'Just Cook <onboarding@getcomet.dev>';
+const fromEmail = env.EMAIL_FROM || 'Just Cook <noreply@justcook.app>';
 
 export async function sendMagicLinkEmail(email: string, url: string) {
 	await resend.emails.send({
