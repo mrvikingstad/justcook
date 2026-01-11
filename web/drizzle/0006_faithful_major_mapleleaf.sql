@@ -1,0 +1,1 @@
+ALTER TABLE "ingredients" ADD COLUMN "ingredient_key" varchar(100);

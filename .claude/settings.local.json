@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s \"C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\")",
+      "Bash(bun create:*)",
+      "Bash(bunx sv create:*)",
+      "Bash(bun install:*)",
+      "Bash(bun add:*)",
+      "Bash(dir:*)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\web\" -Exclude node_modules)",
+      "Bash(Select-Object Name)",
+      "Bash(bun run check:*)",
+      "Bash(timeout 10 bun run:*)",
+      "Bash(bun run:*)",
+      "WebSearch",
+      "WebFetch(domain:www.better-auth.com)",
+      "Bash(npm run check:*)",
+      "Bash(psql:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx svelte-check:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(xargs ls:*)",
+      "Bash(npm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm check:*)",
+      "Bash(pnpm build:*)",
+      "Bash(./gradlew assembleDebug:*)",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android && gradlew.bat assembleDebug\")",
+      "Bash(cmd.exe /c \"where gradle 2>&1\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android && dir gradle\\\\wrapper\")",
+      "Bash(cmd.exe /c \"if exist C:\\\\Users\\\\Eirik\\\\.gradle\\\\wrapper\\\\dists\\\\gradle-8.5-bin\\\\* \\(echo Gradle 8.5 found in cache\\) else \\(echo Gradle 8.5 not found\\)\")",
+      "Bash(powershell.exe -Command \"Invoke-WebRequest -Uri ''https://raw.githubusercontent.com/gradle/gradle/v8.5.0/gradle/wrapper/gradle-wrapper.jar'' -OutFile ''C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android\\\\gradle\\\\wrapper\\\\gradle-wrapper.jar''\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android && gradlew.bat assembleDebug --stacktrace 2>&1\":*)",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\Eirik\\\\Documents\\\\Monet\\\\justcook\\\\android''; .\\\\gradlew.bat assembleDebug 2>&1\")",
+      "Bash(powershell.exe:*)",
+      "Bash(.gradlew.bat assembleDebug)",
+      "Bash(./gradlew.bat assembleDebug)"
+    ]
+  }
+}

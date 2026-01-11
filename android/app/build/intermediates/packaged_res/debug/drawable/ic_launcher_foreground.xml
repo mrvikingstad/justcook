@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Simple chef hat icon centered in adaptive icon safe zone -->
+    <group
+        android:translateX="27"
+        android:translateY="27">
+        <path
+            android:fillColor="#2C2825"
+            android:pathData="M27,8c-4.4,0 -8,3.6 -8,8c0,0.7 0.1,1.4 0.3,2.1C16.1,19.5 14,22.5 14,26v4c0,2.2 1.8,4 4,4h18c2.2,0 4,-1.8 4,-4v-4c0,-3.5 -2.1,-6.5 -5.3,-7.9c0.2,-0.7 0.3,-1.4 0.3,-2.1c0,-4.4 -3.6,-8 -8,-8zM27,12c2.2,0 4,1.8 4,4c0,0.4 -0.1,0.7 -0.2,1.1C29.3,17 27.7,17 27,17c-0.7,0 -2.3,0 -3.8,0.1C23.1,16.7 23,16.4 23,16c0,-2.2 1.8,-4 4,-4zM27,21c3.3,0 6,2.7 6,6v2H21v-2c0,-3.3 2.7,-6 6,-6z"
+            android:strokeWidth="0"/>
+        <path
+            android:fillColor="#2C2825"
+            android:pathData="M18,36h18v6c0,2.2 -1.8,4 -4,4H22c-2.2,0 -4,-1.8 -4,-4V36z"
+            android:strokeWidth="0"/>
+    </group>
+</vector>
