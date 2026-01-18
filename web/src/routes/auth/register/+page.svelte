@@ -26,12 +26,10 @@
 
 			if (result.error) {
 				error = result.error.message || 'Registration failed. Please try again.';
-				console.error('SignUp error:', result.error);
 			} else {
 				success = true;
 			}
 		} catch (err: any) {
-			console.error('SignUp exception:', err);
 			error = err?.message || 'Something went wrong. Please try again.';
 		} finally {
 			isLoading = false;

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { theme, toggleTheme } from '$lib/stores/theme';
 	import { signOut } from '$lib/auth/client';
-	import { BookOpen, Bookmark, Users, User, LogOut, LogIn, Lightbulb, Menu, X, Settings, ChevronDown } from 'lucide-svelte';
+	import { BookOpen, Bookmark, Users, User, LogOut, LogIn, Lightbulb, Menu, X, Settings, ChevronDown, Bot } from 'lucide-svelte';
 
 	interface Props {
 		user?: { id: string; name: string; email: string; image?: string | null; username?: string | null } | null;
@@ -55,6 +55,10 @@
 		<a href="/bookmarks">
 			<Bookmark size={16} />
 			Bookmarks
+		</a>
+		<a href="/ai">
+			<Bot size={16} />
+			Gusto
 		</a>
 		{#if user}
 			<a href="/following">
@@ -117,6 +121,10 @@
 		<a href="/bookmarks" onclick={closeMenu}>
 			<Bookmark size={18} />
 			Bookmarks
+		</a>
+		<a href="/ai" onclick={closeMenu}>
+			<Bot size={18} />
+			JustCook AI
 		</a>
 		{#if user}
 			<a href="/following" onclick={closeMenu}>

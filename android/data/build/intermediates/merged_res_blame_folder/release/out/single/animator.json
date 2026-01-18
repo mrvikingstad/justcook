@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_open_enter.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_open_enter.xml"
+    },
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_fade_exit.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_fade_exit.xml"
+    },
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_close_enter.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_close_enter.xml"
+    },
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_close_exit.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_close_exit.xml"
+    },
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_fade_enter.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_fade_enter.xml"
+    },
+    {
+        "merged": "com.justcook.data-merged_res-24:/animator/fragment_open_exit.xml",
+        "source": "com.justcook.data-fragment-1.5.1-9:/animator/fragment_open_exit.xml"
+    }
+]

@@ -1,0 +1,3 @@
+com.justcook.core.ui
+drawable ic_chef_hat
+font arima_variablefont_wght

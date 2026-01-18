@@ -8,6 +8,7 @@ import {
 } from '$env/static/private';
 import { env } from '$env/dynamic/private';
 import { PUBLIC_APP_URL } from '$env/static/public';
+import { dev } from '$app/environment';
 import { db } from '../db';
 import * as schema from '../db/schema';
 import { sendMagicLinkEmail, sendPasswordResetEmail, sendVerificationEmail } from './email';
@@ -16,9 +17,30 @@ import { sendMagicLinkEmail, sendPasswordResetEmail, sendVerificationEmail } fro
 const APPLE_CLIENT_ID = env.APPLE_CLIENT_ID;
 const APPLE_CLIENT_SECRET = env.APPLE_CLIENT_SECRET;
 
+// Ensure base URL has protocol, default to localhost in dev
+function getBaseURL(): string {
+	if (dev) {
+		return 'http://localhost:5173';
+	}
+
+	let url = PUBLIC_APP_URL || '';
+
+	// Validate PUBLIC_APP_URL is set in production
+	if (!url) {
+		throw new Error('PUBLIC_APP_URL environment variable is required in production. OAuth callbacks will fail without it.');
+	}
+
+	// Add https:// if no protocol specified
+	if (!url.startsWith('http://') && !url.startsWith('https://')) {
+		url = `https://${url}`;
+	}
+
+	return url;
+}
+
 export const auth = betterAuth({
 	secret: BETTER_AUTH_SECRET,
-	baseURL: PUBLIC_APP_URL,
+	baseURL: getBaseURL(),
 
 	database: drizzleAdapter(db, {
 		provider: 'pg',
@@ -34,15 +56,12 @@ export const auth = betterAuth({
 		enabled: true,
 		requireEmailVerification: true,
 		sendResetPassword: async ({ user, url }) => {
-			console.log('[Auth] sendResetPassword called for:', user.email);
 			await sendPasswordResetEmail(user.email, url);
 		}
 	},
 
 	emailVerification: {
 		sendVerificationEmail: async ({ user, url }) => {
-			console.log('[Auth] sendVerificationEmail called for:', user.email);
-			console.log('[Auth] Verification URL:', url);
 			await sendVerificationEmail(user.email, url);
 		},
 		sendOnSignUp: true,
@@ -74,7 +93,7 @@ export const auth = betterAuth({
 	],
 
 	session: {
-		expiresIn: 60 * 60 * 24 * 30, // 30 days
+		expiresIn: 60 * 60 * 24 * 14, // 14 days (reduced from 30 for security)
 		updateAge: 60 * 60 * 24 // Update session every 24 hours
 	},
 

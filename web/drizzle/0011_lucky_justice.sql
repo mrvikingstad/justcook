@@ -1,0 +1,20 @@
+CREATE INDEX "follows_follower_id_idx" ON "follows" USING btree ("follower_id");--> statement-breakpoint
+CREATE INDEX "follows_following_id_idx" ON "follows" USING btree ("following_id");--> statement-breakpoint
+CREATE INDEX "ingredients_recipe_id_idx" ON "ingredients" USING btree ("recipe_id");--> statement-breakpoint
+CREATE INDEX "recipes_author_id_idx" ON "recipes" USING btree ("author_id");--> statement-breakpoint
+CREATE INDEX "recipes_is_published_idx" ON "recipes" USING btree ("is_published");--> statement-breakpoint
+CREATE INDEX "recipes_cuisine_idx" ON "recipes" USING btree ("cuisine");--> statement-breakpoint
+CREATE INDEX "recipes_tag_idx" ON "recipes" USING btree ("tag");--> statement-breakpoint
+CREATE INDEX "recipes_language_idx" ON "recipes" USING btree ("language");--> statement-breakpoint
+CREATE INDEX "recipes_published_at_idx" ON "recipes" USING btree ("published_at");--> statement-breakpoint
+CREATE INDEX "recipes_published_language_idx" ON "recipes" USING btree ("is_published","language","published_at");--> statement-breakpoint
+CREATE INDEX "steps_recipe_id_idx" ON "steps" USING btree ("recipe_id");--> statement-breakpoint
+CREATE INDEX "bookmarks_recipe_id_idx" ON "bookmarks" USING btree ("recipe_id");--> statement-breakpoint
+CREATE INDEX "bookmarks_user_id_idx" ON "bookmarks" USING btree ("user_id");--> statement-breakpoint
+CREATE INDEX "comments_recipe_id_idx" ON "comments" USING btree ("recipe_id");--> statement-breakpoint
+CREATE INDEX "comments_user_id_idx" ON "comments" USING btree ("user_id");--> statement-breakpoint
+CREATE INDEX "comments_created_at_idx" ON "comments" USING btree ("created_at");--> statement-breakpoint
+CREATE INDEX "votes_recipe_id_idx" ON "votes" USING btree ("recipe_id");--> statement-breakpoint
+CREATE INDEX "votes_user_id_idx" ON "votes" USING btree ("user_id");--> statement-breakpoint
+CREATE INDEX "moderation_queue_status_idx" ON "moderation_queue" USING btree ("status");--> statement-breakpoint
+CREATE INDEX "moderation_queue_created_at_idx" ON "moderation_queue" USING btree ("created_at");

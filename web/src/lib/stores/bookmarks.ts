@@ -5,7 +5,20 @@ import { browser } from '$app/environment';
 const LOCAL_STORAGE_KEY = 'bookmarks';
 
 // Initialize from localStorage for immediate display
-const stored = browser ? JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]') : [];
+// Wrapped in try-catch to handle corrupted localStorage data
+let stored: string[] = [];
+if (browser) {
+	try {
+		stored = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]');
+		if (!Array.isArray(stored)) {
+			stored = [];
+		}
+	} catch {
+		// Corrupted localStorage data - clear it and start fresh
+		localStorage.removeItem(LOCAL_STORAGE_KEY);
+		stored = [];
+	}
+}
 export const bookmarks = writable<string[]>(stored);
 
 // Track if we've synced with server
@@ -33,12 +46,18 @@ export async function initBookmarks(authenticated: boolean) {
 				bookmarks.set(data.bookmarks || []);
 				hasSyncedWithServer = true;
 			}
-		} catch (error) {
-			console.error('Failed to fetch bookmarks:', error);
+		} catch {
+			// Silently fail - user will see stale localStorage data
 		}
 	} else if (!authenticated) {
 		// Reset to localStorage for logged out users
-		const local = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]');
+		let local: string[] = [];
+		try {
+			const parsed = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY) || '[]');
+			local = Array.isArray(parsed) ? parsed : [];
+		} catch {
+			localStorage.removeItem(LOCAL_STORAGE_KEY);
+		}
 		bookmarks.set(local);
 		hasSyncedWithServer = false;
 	}
@@ -77,8 +96,7 @@ export async function toggleBookmark(recipeSlug: string): Promise<boolean> {
 
 			const data = await response.json();
 			return data.bookmarked;
-		} catch (error) {
-			console.error('Failed to toggle bookmark:', error);
+		} catch {
 			// Revert on error
 			if (isCurrentlyBookmarked) {
 				bookmarks.update((list) => [...list, recipeSlug]);

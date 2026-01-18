@@ -3,6 +3,7 @@ import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
 import { bookmarks, recipes } from '$lib/server/db/schema';
 import { and, eq } from 'drizzle-orm';
+import { logger, getRequestId } from '$lib/server/logger';
 
 // GET - Fetch user's bookmarked recipe slugs
 export const GET: RequestHandler = async ({ locals }) => {
@@ -19,8 +20,8 @@ export const GET: RequestHandler = async ({ locals }) => {
 
 		return json({ bookmarks: userBookmarks.map((b) => b.slug) });
 	} catch (error) {
-		console.error('Failed to fetch bookmarks:', error);
-		return json({ error: 'Failed to fetch bookmarks' }, { status: 500 });
+		logger.error('Failed to fetch bookmarks', error, { userId: locals.user.id });
+		return json({ error: 'Failed to fetch bookmarks', requestId: getRequestId() }, { status: 500 });
 	}
 };
 
@@ -68,7 +69,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 			return json({ success: true, bookmarked: true });
 		}
 	} catch (error) {
-		console.error('Failed to toggle bookmark:', error);
-		return json({ error: 'Failed to toggle bookmark' }, { status: 500 });
+		logger.error('Failed to toggle bookmark', error, { userId: locals.user.id, recipeSlug });
+		return json({ error: 'Failed to toggle bookmark', requestId: getRequestId() }, { status: 500 });
 	}
 };

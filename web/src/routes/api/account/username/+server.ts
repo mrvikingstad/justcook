@@ -6,6 +6,103 @@ import { eq, and, ne, sql } from 'drizzle-orm';
 
 const USERNAME_CHANGE_COOLDOWN_DAYS = 30;
 
+// Reserved usernames that cannot be claimed
+const RESERVED_USERNAMES = new Set([
+	// System and admin
+	'admin',
+	'administrator',
+	'mod',
+	'moderator',
+	'support',
+	'help',
+	'system',
+	'root',
+	'null',
+	'undefined',
+	// Brand names
+	'justcook',
+	'just_cook',
+	'justcook_official',
+	'official',
+	// Common routes
+	'api',
+	'www',
+	'app',
+	'web',
+	'login',
+	'logout',
+	'signin',
+	'signout',
+	'signup',
+	'register',
+	'account',
+	'settings',
+	'profile',
+	'user',
+	'users',
+	'chef',
+	'chefs',
+	'recipe',
+	'recipes',
+	'home',
+	'explore',
+	'discover',
+	'trending',
+	'search',
+	'about',
+	'contact',
+	'privacy',
+	'terms',
+	'blog',
+	'news'
+]);
+
+/**
+ * Validate username format and content
+ */
+function validateUsername(username: string): { valid: boolean; error?: string } {
+	// Length checks
+	if (username.length < 3) {
+		return { valid: false, error: 'Username must be at least 3 characters' };
+	}
+
+	if (username.length > 30) {
+		return { valid: false, error: 'Username must be at most 30 characters' };
+	}
+
+	// Character validation
+	if (!/^[a-z0-9_]+$/.test(username)) {
+		return { valid: false, error: 'Username can only contain letters, numbers, and underscores' };
+	}
+
+	// Cannot start or end with underscore
+	if (username.startsWith('_') || username.endsWith('_')) {
+		return { valid: false, error: 'Username cannot start or end with an underscore' };
+	}
+
+	// Cannot have consecutive underscores
+	if (/__/.test(username)) {
+		return { valid: false, error: 'Username cannot contain consecutive underscores' };
+	}
+
+	// Cannot be all numbers
+	if (/^\d+$/.test(username)) {
+		return { valid: false, error: 'Username cannot be only numbers' };
+	}
+
+	// Reserved username check
+	if (RESERVED_USERNAMES.has(username)) {
+		return { valid: false, error: 'This username is reserved' };
+	}
+
+	// Check for reserved prefixes/patterns
+	if (username.startsWith('admin') || username.startsWith('mod_') || username.startsWith('official_')) {
+		return { valid: false, error: 'This username is reserved' };
+	}
+
+	return { valid: true };
+}
+
 export const PUT: RequestHandler = async ({ request, locals }) => {
 	if (!locals.user) {
 		throw error(401, 'Not authenticated');
@@ -19,23 +116,10 @@ export const PUT: RequestHandler = async ({ request, locals }) => {
 
 	const trimmedUsername = newUsername.trim().toLowerCase();
 
-	// Validate username format
-	if (trimmedUsername.length < 3) {
-		throw error(400, 'Username must be at least 3 characters');
-	}
-
-	if (trimmedUsername.length > 30) {
-		throw error(400, 'Username must be at most 30 characters');
-	}
-
-	if (!/^[a-z0-9_]+$/.test(trimmedUsername)) {
-		throw error(400, 'Username can only contain letters, numbers, and underscores');
-	}
-
-	// Reserved usernames
-	const reserved = ['admin', 'administrator', 'mod', 'moderator', 'justcook', 'support', 'help', 'api', 'www'];
-	if (reserved.includes(trimmedUsername)) {
-		throw error(400, 'This username is reserved');
+	// Validate username format and content
+	const validation = validateUsername(trimmedUsername);
+	if (!validation.valid) {
+		throw error(400, validation.error!);
 	}
 
 	// Get current user data

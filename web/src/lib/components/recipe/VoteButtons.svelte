@@ -40,11 +40,10 @@
 			} else if (response.status === 401) {
 				// User not logged in - redirect to login
 				window.location.href = '/auth/login';
-			} else {
-				console.error('Vote failed:', data.error);
 			}
-		} catch (error) {
-			console.error('Vote request failed:', error);
+			// Other errors: silently fail, UI already shows current state
+		} catch {
+			// Network error: silently fail, UI already shows current state
 		} finally {
 			isLoading = false;
 		}

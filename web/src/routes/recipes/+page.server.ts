@@ -5,6 +5,7 @@ import { eq, and, desc, sql, or, ilike } from 'drizzle-orm';
 import { parseSearchQuery } from '$lib/utils/searchParser';
 
 const RECIPES_PER_PAGE = 12;
+const MIN_SEARCH_LENGTH = 2; // Minimum characters for text search
 
 export const load: PageServerLoad = async ({ url }) => {
 	const page = parseInt(url.searchParams.get('page') || '1');
@@ -53,12 +54,17 @@ export const load: PageServerLoad = async ({ url }) => {
 		}
 	}
 
-	// Add text search condition (searches title AND description)
-	if (searchText) {
-		const textCondition = or(
-			ilike(recipes.title, `%${searchText}%`),
-			ilike(recipes.description, `%${searchText}%`)
+	// Add text search condition using PostgreSQL full-text search
+	// Falls back to ILIKE for short queries (less than MIN_SEARCH_LENGTH chars)
+	if (searchText && searchText.length >= MIN_SEARCH_LENGTH) {
+		// Use full-text search with the search_vector column (GIN indexed)
+		// plainto_tsquery handles user input safely and converts to tsquery format
+		conditions.push(
+			sql`${recipes.searchVector} @@ plainto_tsquery('english', ${searchText})`
 		);
+	} else if (searchText && searchText.length > 0) {
+		// For very short queries, use prefix matching on title only
+		const textCondition = ilike(recipes.title, `${searchText}%`);
 		if (textCondition) {
 			conditions.push(textCondition);
 		}
@@ -69,27 +75,9 @@ export const load: PageServerLoad = async ({ url }) => {
 	const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 	const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
 
-	// Build query based on sort
-	let orderByClause;
-	if (sortBy === 'latest') {
-		orderByClause = desc(recipes.publishedAt);
-	} else if (sortBy === 'week') {
-		orderByClause = desc(sql`
-			(SELECT COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)
-			 FROM ${votes}
-			 WHERE ${votes.recipeId} = ${recipes.id}
-			 AND ${votes.createdAt} >= ${sevenDaysAgo})
-		`);
-	} else if (sortBy === 'month') {
-		orderByClause = desc(sql`
-			(SELECT COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)
-			 FROM ${votes}
-			 WHERE ${votes.recipeId} = ${recipes.id}
-			 AND ${votes.createdAt} >= ${thirtyDaysAgo})
-		`);
-	} else {
-		orderByClause = desc(recipes.voteScore);
-	}
+	// Determine sort column name for ORDER BY
+	type SortKey = 'latest' | 'week' | 'month' | 'total';
+	const sortKey: SortKey = (sortBy === 'latest' || sortBy === 'week' || sortBy === 'month') ? sortBy : 'total';
 
 	// Get total count for pagination
 	const countResult = await db
@@ -100,7 +88,8 @@ export const load: PageServerLoad = async ({ url }) => {
 	const totalCount = countResult[0]?.count || 0;
 	const totalPages = Math.ceil(totalCount / RECIPES_PER_PAGE);
 
-	// Get recipes with vote data
+	// Get recipes with vote data (including time-filtered counts for efficient sorting)
+	// All vote aggregations are computed in a single pass with conditional sums
 	const recipeResults = await db
 		.select({
 			id: recipes.id,
@@ -116,13 +105,21 @@ export const load: PageServerLoad = async ({ url }) => {
 			authorId: recipes.authorId,
 			publishedAt: recipes.publishedAt,
 			upvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)::int`,
-			downvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} < 0 THEN 1 ELSE 0 END), 0)::int`
+			downvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} < 0 THEN 1 ELSE 0 END), 0)::int`,
+			// Time-filtered upvote counts for sorting (computed in same aggregation pass)
+			weekUpvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 AND ${votes.createdAt} >= ${sevenDaysAgo} THEN 1 ELSE 0 END), 0)::int`,
+			monthUpvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 AND ${votes.createdAt} >= ${thirtyDaysAgo} THEN 1 ELSE 0 END), 0)::int`
 		})
 		.from(recipes)
 		.leftJoin(votes, eq(recipes.id, votes.recipeId))
 		.where(and(...conditions))
 		.groupBy(recipes.id)
-		.orderBy(orderByClause)
+		.orderBy(
+			sortKey === 'latest' ? desc(recipes.publishedAt) :
+			sortKey === 'week' ? desc(sql`COALESCE(SUM(CASE WHEN ${votes.value} > 0 AND ${votes.createdAt} >= ${sevenDaysAgo} THEN 1 ELSE 0 END), 0)`) :
+			sortKey === 'month' ? desc(sql`COALESCE(SUM(CASE WHEN ${votes.value} > 0 AND ${votes.createdAt} >= ${thirtyDaysAgo} THEN 1 ELSE 0 END), 0)`) :
+			desc(sql`COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)`)
+		)
 		.limit(RECIPES_PER_PAGE)
 		.offset(offset);
 
@@ -133,7 +130,8 @@ export const load: PageServerLoad = async ({ url }) => {
 				.select({
 					userId: user.id,
 					username: user.username,
-					fullName: user.fullName
+					fullName: user.fullName,
+					name: user.name
 				})
 				.from(user)
 				.where(sql`${user.id} IN ${authorIds}`)
@@ -165,7 +163,7 @@ export const load: PageServerLoad = async ({ url }) => {
 				title: r.title,
 				description: r.description,
 				image: r.photoUrl,
-				authorName: author?.fullName || 'Unknown',
+				authorName: author?.fullName || author?.name || 'Unknown',
 				authorUsername: author?.username || '',
 				cuisine: r.cuisine,
 				tag: r.tag,

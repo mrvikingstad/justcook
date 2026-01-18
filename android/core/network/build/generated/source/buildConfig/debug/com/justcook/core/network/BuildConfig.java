@@ -8,5 +8,5 @@ public final class BuildConfig {
   public static final String LIBRARY_PACKAGE_NAME = "com.justcook.core.network";
   public static final String BUILD_TYPE = "debug";
   // Field from build type: debug
-  public static final String API_BASE_URL = "http://10.0.2.2:5173";
+  public static final String API_BASE_URL = "https://justcook-production.up.railway.app";
 }

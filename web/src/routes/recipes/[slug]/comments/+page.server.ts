@@ -28,7 +28,8 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 	const [recipeAuthor] = await db
 		.select({
 			username: user.username,
-			fullName: user.fullName
+			fullName: user.fullName,
+			name: user.name
 		})
 		.from(user)
 		.where(eq(user.id, recipe.authorId))
@@ -57,7 +58,7 @@ export const load: PageServerLoad = async ({ params, locals }) => {
 			title: recipe.title,
 			slug: recipe.slug,
 			authorId: recipe.authorId,
-			authorName: recipeAuthor?.fullName || 'Unknown'
+			authorName: recipeAuthor?.fullName || recipeAuthor?.name || 'Unknown'
 		},
 		comments: commentsResult.map((c) => ({
 			id: c.id,

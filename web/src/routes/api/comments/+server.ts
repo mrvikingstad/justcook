@@ -2,12 +2,20 @@ import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
 import { comments, recipes, user } from '$lib/server/db/schema';
-import { eq, sql, desc } from 'drizzle-orm';
-import { moderateComment } from '$lib/server/moderation';
+import { eq, sql, desc, count } from 'drizzle-orm';
+import { moderateComment, queueForReview } from '$lib/server/moderation';
+import { sanitizeText } from '$lib/server/validation/sanitize';
+import { logger, getRequestId } from '$lib/server/logger';
+
+const DEFAULT_LIMIT = 20;
+const MAX_LIMIT = 50;
 
 export const GET: RequestHandler = async ({ url, locals }) => {
 	const recipeId = url.searchParams.get('recipeId');
 	const slug = url.searchParams.get('slug');
+	const page = Math.max(1, parseInt(url.searchParams.get('page') || '1', 10));
+	const limit = Math.min(MAX_LIMIT, Math.max(1, parseInt(url.searchParams.get('limit') || String(DEFAULT_LIMIT), 10)));
+	const offset = (page - 1) * limit;
 
 	let targetRecipeId = recipeId;
 
@@ -36,7 +44,14 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 		.where(eq(recipes.id, targetRecipeId))
 		.limit(1);
 
-	// Get comments with author info
+	// Get total comment count for pagination
+	const [countResult] = await db
+		.select({ total: count() })
+		.from(comments)
+		.where(eq(comments.recipeId, targetRecipeId));
+	const totalCount = countResult?.total ?? 0;
+
+	// Get paginated comments with author info
 	const commentList = await db
 		.select({
 			id: comments.id,
@@ -51,7 +66,11 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 		.from(comments)
 		.leftJoin(user, eq(comments.userId, user.id))
 		.where(eq(comments.recipeId, targetRecipeId))
-		.orderBy(desc(comments.createdAt));
+		.orderBy(desc(comments.createdAt))
+		.limit(limit)
+		.offset(offset);
+
+	const totalPages = Math.ceil(totalCount / limit);
 
 	return json({
 		comments: commentList.map((c) => ({
@@ -63,7 +82,14 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 			authorAvatar: c.photoUrl || c.userImage || null,
 			isRecipeAuthor: c.userId === recipe?.authorId,
 			isOwn: locals.user?.id === c.userId
-		}))
+		})),
+		pagination: {
+			page,
+			limit,
+			totalCount,
+			totalPages,
+			hasMore: page < totalPages
+		}
 	});
 };
 
@@ -72,6 +98,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		return json({ error: 'Unauthorized' }, { status: 401 });
 	}
 
+	const userId = locals.user.id;
 	const { recipeId, content } = await request.json();
 
 	if (!recipeId || typeof recipeId !== 'string') {
@@ -82,12 +109,19 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		return json({ error: 'Comment content is required' }, { status: 400 });
 	}
 
-	if (content.trim().length > 2000) {
+	// Sanitize content to prevent XSS
+	const sanitizedContent = sanitizeText(content);
+
+	if (sanitizedContent.length < 2) {
+		return json({ error: 'Comment is too short (min 2 characters)' }, { status: 400 });
+	}
+
+	if (sanitizedContent.length > 2000) {
 		return json({ error: 'Comment is too long (max 2000 characters)' }, { status: 400 });
 	}
 
 	// Moderate comment before posting
-	const moderation = await moderateComment(content);
+	const moderation = await moderateComment(sanitizedContent, userId);
 
 	if (moderation.flagged) {
 		return json(
@@ -108,30 +142,41 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 			return json({ error: 'Recipe not found' }, { status: 404 });
 		}
 
-		// Insert comment
-		const [newComment] = await db
-			.insert(comments)
-			.values({
-				recipeId,
-				userId: locals.user.id,
-				content: content.trim()
-			})
-			.returning({
-				id: comments.id,
-				content: comments.content,
-				createdAt: comments.createdAt,
-				userId: comments.userId
-			});
+		// Insert comment and increment count in a transaction
+		const newComment = await db.transaction(async (tx) => {
+			// Lock the recipe row first with FOR UPDATE to prevent race conditions
+			await tx
+				.select({ id: recipes.id })
+				.from(recipes)
+				.where(eq(recipes.id, recipeId))
+				.for('update');
 
-		// Increment comment count on recipe
-		await db
-			.update(recipes)
-			.set({
-				commentCount: sql`${recipes.commentCount} + 1`
-			})
-			.where(eq(recipes.id, recipeId));
+			const [comment] = await tx
+				.insert(comments)
+				.values({
+					recipeId,
+					userId,
+					content: sanitizedContent
+				})
+				.returning({
+					id: comments.id,
+					content: comments.content,
+					createdAt: comments.createdAt,
+					userId: comments.userId
+				});
 
-		// Get user info for response
+			// Increment comment count atomically (row is already locked)
+			await tx
+				.update(recipes)
+				.set({
+					commentCount: sql`${recipes.commentCount} + 1`
+				})
+				.where(eq(recipes.id, recipeId));
+
+			return comment;
+		});
+
+		// Get user info for response (outside transaction, not critical)
 		const [userInfo] = await db
 			.select({
 				userName: user.name,
@@ -140,8 +185,13 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 				photoUrl: user.photoUrl
 			})
 			.from(user)
-			.where(eq(user.id, locals.user.id))
+			.where(eq(user.id, userId))
 			.limit(1);
+
+		// Queue for manual review if moderation couldn't complete
+		if (moderation.needsReview && moderation.reviewReason) {
+			await queueForReview('comment', newComment.id, moderation.reviewReason);
+		}
 
 		return json({
 			success: true,
@@ -157,8 +207,8 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 			}
 		});
 	} catch (error: unknown) {
-		console.error('Failed to post comment:', error);
-		return json({ error: 'Failed to post comment' }, { status: 500 });
+		logger.error('Failed to post comment', error, { recipeId, userId });
+		return json({ error: 'Failed to post comment', requestId: getRequestId() }, { status: 500 });
 	}
 };
 
@@ -193,20 +243,29 @@ export const DELETE: RequestHandler = async ({ request, locals }) => {
 			return json({ error: 'Cannot delete another user\'s comment' }, { status: 403 });
 		}
 
-		// Delete comment
-		await db.delete(comments).where(eq(comments.id, commentId));
+		// Delete comment and decrement count in a transaction
+		await db.transaction(async (tx) => {
+			// Lock the recipe row first with FOR UPDATE to prevent race conditions
+			await tx
+				.select({ id: recipes.id })
+				.from(recipes)
+				.where(eq(recipes.id, comment.recipeId))
+				.for('update');
 
-		// Decrement comment count on recipe
-		await db
-			.update(recipes)
-			.set({
-				commentCount: sql`GREATEST(${recipes.commentCount} - 1, 0)`
-			})
-			.where(eq(recipes.id, comment.recipeId));
+			await tx.delete(comments).where(eq(comments.id, commentId));
+
+			// Decrement comment count atomically (row is already locked)
+			await tx
+				.update(recipes)
+				.set({
+					commentCount: sql`GREATEST(${recipes.commentCount} - 1, 0)`
+				})
+				.where(eq(recipes.id, comment.recipeId));
+		});
 
 		return json({ success: true });
 	} catch (error: unknown) {
-		console.error('Failed to delete comment:', error);
-		return json({ error: 'Failed to delete comment' }, { status: 500 });
+		logger.error('Failed to delete comment', error, { commentId, userId: locals.user.id });
+		return json({ error: 'Failed to delete comment', requestId: getRequestId() }, { status: 500 });
 	}
 };

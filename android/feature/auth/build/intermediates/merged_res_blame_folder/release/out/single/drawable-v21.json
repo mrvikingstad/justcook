@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.justcook.feature.auth-merged_res-57:/drawable-v21/notification_action_background.xml",
+        "source": "com.justcook.feature.auth-core-1.12.0-28:/drawable-v21/notification_action_background.xml"
+    }
+]

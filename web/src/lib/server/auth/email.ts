@@ -1,13 +1,20 @@
 import { Resend } from 'resend';
 import { RESEND_API_KEY } from '$env/static/private';
 import { env } from '$env/dynamic/private';
+import { dev } from '$app/environment';
+import { logger } from '$lib/server/logger';
 
+// Validate RESEND_API_KEY in production - emails are critical for auth flows
 if (!RESEND_API_KEY) {
-	console.warn('RESEND_API_KEY is not set - emails will not be sent');
+	if (dev) {
+		logger.warn('RESEND_API_KEY is not set - emails will not be sent in development');
+	} else {
+		throw new Error('RESEND_API_KEY environment variable is required in production. Email verification and password reset will not work without it.');
+	}
 }
 
 const resend = new Resend(RESEND_API_KEY);
-const fromEmail = env.EMAIL_FROM || 'Just Cook <noreply@getcomet.dev>';
+const fromEmail = env.EMAIL_FROM || 'Just Cook <noreply@justcook.app>';
 
 export async function sendMagicLinkEmail(email: string, url: string) {
 	await resend.emails.send({
@@ -71,7 +78,6 @@ export async function sendPasswordResetEmail(email: string, url: string) {
 
 export async function sendVerificationEmail(email: string, url: string) {
 	try {
-		console.log(`Sending verification email to ${email}`);
 		const result = await resend.emails.send({
 			from: fromEmail,
 			to: email,
@@ -99,9 +105,9 @@ export async function sendVerificationEmail(email: string, url: string) {
 				</html>
 			`
 		});
-		console.log('Verification email sent:', result);
+		return result;
 	} catch (error) {
-		console.error('Failed to send verification email:', error);
+		logger.error('Failed to send verification email', error, { email });
 		throw error;
 	}
 }

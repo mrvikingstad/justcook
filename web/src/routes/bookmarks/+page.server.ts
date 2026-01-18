@@ -43,7 +43,8 @@ export const load: PageServerLoad = async ({ locals }) => {
 					.select({
 						userId: user.id,
 						username: user.username,
-						fullName: user.fullName
+						fullName: user.fullName,
+						name: user.name
 					})
 					.from(user)
 					.where(sql`${user.id} IN ${authorIds}`)
@@ -59,7 +60,7 @@ export const load: PageServerLoad = async ({ locals }) => {
 				title: r.title,
 				description: r.description,
 				image: r.photoUrl,
-				authorName: author?.fullName || 'Unknown',
+				authorName: author?.fullName || author?.name || 'Unknown',
 				authorUsername: author?.username || '',
 				cuisine: r.cuisine,
 				tag: r.tag,

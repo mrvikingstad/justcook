@@ -34,7 +34,7 @@
       "idx": 4,
       "version": "7",
       "when": 1768051656629,
-      "tag": "0004_uneven_blindfold",
+      "tag": "0004_profile_tier",
       "breakpoints": true
     },
     {
@@ -63,6 +63,69 @@
       "version": "7",
       "when": 1768138373101,
       "tag": "0008_stiff_hex",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1768506021385,
+      "tag": "0009_simple_sugar_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1736985600000,
+      "tag": "0010_add_performance_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1768515094478,
+      "tag": "0011_lucky_justice",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1768581785825,
+      "tag": "0012_thin_havok",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1768585037779,
+      "tag": "0013_curious_the_watchers",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1768686370840,
+      "tag": "0014_furry_masque",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1737158400000,
+      "tag": "0015_add_fulltext_search",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1737244800000,
+      "tag": "0016_add_vote_time_indexes",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1768736656543,
+      "tag": "0017_watery_nemesis",
       "breakpoints": true
     }
   ]

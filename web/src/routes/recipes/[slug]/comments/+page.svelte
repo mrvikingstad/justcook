@@ -53,8 +53,8 @@
 			if (response.ok) {
 				comments = comments.filter((c) => c.id !== commentId);
 			}
-		} catch (e) {
-			console.error('Failed to delete comment:', e);
+		} catch {
+			// Silently fail - comment remains in list, user can retry
 		}
 	}
 </script>

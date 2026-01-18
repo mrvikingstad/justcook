@@ -17,13 +17,18 @@ class AuthInterceptor @Inject constructor(
 
         val token = sessionProvider.get().getSessionToken()
 
+        // Always add X-Requested-With header for CSRF protection bypass
+        // This header identifies requests from the mobile app (not a browser)
+        val requestBuilder = originalRequest.newBuilder()
+            .addHeader("X-Requested-With", "JustCookApp")
+
         val request = if (token != null) {
-            originalRequest.newBuilder()
+            requestBuilder
                 .addHeader("Authorization", "Bearer $token")
                 .addHeader("Cookie", "better-auth.session_token=$token")
                 .build()
         } else {
-            originalRequest
+            requestBuilder.build()
         }
 
         val response = chain.proceed(request)

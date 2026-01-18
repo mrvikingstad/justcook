@@ -2,15 +2,32 @@ import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
 import { user, follows, recipes, votes } from '$lib/server/db/schema';
-import { eq, and, sql, desc } from 'drizzle-orm';
+import { eq, and, sql, desc, count } from 'drizzle-orm';
+
+const DEFAULT_LIMIT = 20;
+const MAX_LIMIT = 50;
 
 export const GET: RequestHandler = async ({ params, locals, url }) => {
 	const { username } = params;
 	const sortBy = url.searchParams.get('sort') || 'latest';
+	const page = Math.max(1, parseInt(url.searchParams.get('page') || '1', 10));
+	const limit = Math.min(MAX_LIMIT, Math.max(1, parseInt(url.searchParams.get('limit') || String(DEFAULT_LIMIT), 10)));
+	const offset = (page - 1) * limit;
 
-	// Find user by username
+	// Find user by username - only select needed fields
 	const [foundUser] = await db
-		.select()
+		.select({
+			id: user.id,
+			username: user.username,
+			name: user.name,
+			fullName: user.fullName,
+			country: user.country,
+			bio: user.bio,
+			photoUrl: user.photoUrl,
+			image: user.image,
+			profileTier: user.profileTier,
+			createdAt: user.createdAt
+		})
 		.from(user)
 		.where(eq(user.username, username))
 		.limit(1);
@@ -28,7 +45,20 @@ export const GET: RequestHandler = async ({ params, locals, url }) => {
 		orderByClause = desc(recipes.publishedAt);
 	}
 
-	// Get user's published recipes with vote counts
+	// Get total recipe count and total upvotes for stats (separate query for accurate counts)
+	const [statsResult] = await db
+		.select({
+			recipeCount: sql<number>`COUNT(DISTINCT ${recipes.id})::int`,
+			totalUpvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)::int`
+		})
+		.from(recipes)
+		.leftJoin(votes, eq(recipes.id, votes.recipeId))
+		.where(and(eq(recipes.authorId, foundUser.id), eq(recipes.isPublished, true)));
+
+	const recipeCount = statsResult?.recipeCount ?? 0;
+	const totalUpvotes = statsResult?.totalUpvotes ?? 0;
+
+	// Get paginated user's published recipes with vote counts
 	const chefRecipes = await db
 		.select({
 			id: recipes.id,
@@ -49,10 +79,9 @@ export const GET: RequestHandler = async ({ params, locals, url }) => {
 		.leftJoin(votes, eq(recipes.id, votes.recipeId))
 		.where(and(eq(recipes.authorId, foundUser.id), eq(recipes.isPublished, true)))
 		.groupBy(recipes.id)
-		.orderBy(orderByClause);
-
-	// Calculate total upvotes across all recipes
-	const totalUpvotes = chefRecipes.reduce((sum, r) => sum + r.upvotes, 0);
+		.orderBy(orderByClause)
+		.limit(limit)
+		.offset(offset);
 
 	// Get follower count
 	const followerResult = await db
@@ -83,6 +112,8 @@ export const GET: RequestHandler = async ({ params, locals, url }) => {
 	const profileTier = foundUser.profileTier || 'user';
 	const memberSince = foundUser.createdAt || new Date();
 
+	const totalPages = Math.ceil(recipeCount / limit);
+
 	return json({
 		chef: {
 			id: foundUser.id,
@@ -94,7 +125,7 @@ export const GET: RequestHandler = async ({ params, locals, url }) => {
 			profileTier: profileTier,
 			chefSince: memberSince,
 			stats: {
-				recipeCount: chefRecipes.length,
+				recipeCount,
 				totalUpvotes,
 				followerCount
 			}
@@ -115,6 +146,13 @@ export const GET: RequestHandler = async ({ params, locals, url }) => {
 			downvotes: r.downvotes,
 			publishedAt: r.publishedAt
 		})),
+		pagination: {
+			page,
+			limit,
+			totalCount: recipeCount,
+			totalPages,
+			hasMore: page < totalPages
+		},
 		isFollowing,
 		isOwnProfile: locals.user?.id === foundUser.id
 	});

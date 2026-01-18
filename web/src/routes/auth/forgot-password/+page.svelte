@@ -14,7 +14,7 @@
 		error = '';
 
 		try {
-			await authClient.forgetPassword({
+			await authClient.requestPasswordReset({
 				email: email.trim(),
 				redirectTo: '/auth/reset-password'
 			});

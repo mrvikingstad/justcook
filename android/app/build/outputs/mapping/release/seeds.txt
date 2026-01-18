@@ -1,0 +1,1633 @@
+com.justcook.data.remote.dto.response.RecipeDto$$serializer
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer
+com.justcook.feature.profile.FollowingViewModel
+kotlinx.coroutines.internal.MainDispatcherFactory
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto
+androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
+com.justcook.data.remote.dto.request.VoteRequestDto
+androidx.compose.ui.draw.DrawBehindElement
+com.justcook.data.remote.api.RecipeApiService
+kotlinx.serialization.encoding.Decoder
+com.justcook.data.remote.dto.response.StepDto
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer
+dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories$ActivityEntryPoint
+androidx.profileinstaller.ProfileInstallerInitializer
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$Companion
+androidx.compose.ui.focus.FocusOwnerImpl$modifier$1
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer
+androidx.compose.ui.layout.LayoutIdElement
+androidx.compose.ui.semantics.EmptySemanticsElement
+com.justcook.data.remote.api.AuthApiService
+androidx.compose.ui.focus.FocusRequesterElement
+androidx.compose.material3.MinimumInteractiveModifier
+android.support.v4.app.RemoteActionCompatParcelizer
+androidx.compose.foundation.layout.PaddingValuesElement
+androidx.compose.foundation.layout.PaddingElement
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer
+kotlinx.serialization.json.JsonPrimitive$Companion
+androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto
+com.justcook.feature.auth.AuthViewModel
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer
+com.justcook.data.remote.dto.response.SessionDto$$serializer
+androidx.compose.foundation.FocusableElement
+androidx.core.app.RemoteActionCompatParcelizer
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$Companion
+com.justcook.data.remote.dto.response.RecipeListResponseDto$Companion
+kotlinx.serialization.descriptors.SerialDescriptor
+androidx.startup.InitializationProvider
+com.justcook.data.remote.dto.request.FollowRequestDto$Companion
+com.justcook.data.remote.dto.request.StepInputDto$$serializer
+com.justcook.data.remote.dto.response.TrendingResponseDto
+com.justcook.data.remote.dto.response.CommentDto$Companion
+com.justcook.data.remote.dto.response.RecipeDto$Companion
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto
+androidx.emoji2.text.EmojiCompatInitializer
+com.justcook.data.remote.dto.response.SessionResponseDto$Companion
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer
+androidx.compose.ui.draw.DrawWithCacheElement
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$Companion
+androidx.compose.foundation.layout.HorizontalAlignElement
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$Companion
+androidx.compose.animation.EnterExitTransitionElement
+com.justcook.data.remote.dto.response.DiscoverResponseDto$Companion
+androidx.profileinstaller.ProfileInstallReceiver
+com.justcook.data.remote.dto.response.CommentDto
+dagger.hilt.android.internal.managers.ActivityComponentManager$ActivityComponentBuilderEntryPoint
+com.justcook.data.remote.dto.response.IngredientDto$$serializer
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$Companion
+com.justcook.android.JustCookApplication_GeneratedInjector
+androidx.compose.foundation.layout.SizeElement
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto
+com.justcook.feature.search.SearchViewModel
+com.justcook.android.JustCookApplication
+androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
+androidx.core.graphics.drawable.IconCompatParcelizer
+kotlinx.coroutines.android.AndroidDispatcherFactory
+com.justcook.data.remote.dto.response.SessionDto
+androidx.compose.foundation.layout.IntrinsicWidthElement
+com.justcook.data.remote.dto.response.IngredientDto
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$Companion
+com.justcook.data.remote.dto.request.VoteRequestDto$Companion
+com.justcook.feature.profile.SettingsViewModel
+androidx.compose.ui.layout.LayoutElement
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer
+androidx.compose.ui.focus.FocusChangedElement
+com.justcook.data.remote.dto.response.FollowingResponseDto$Companion
+com.justcook.data.remote.dto.request.IngredientInputDto$Companion
+androidx.lifecycle.ProcessLifecycleInitializer
+android.support.v4.graphics.drawable.IconCompatParcelizer
+androidx.compose.ui.input.key.KeyInputElement
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$Companion
+com.justcook.data.remote.dto.response.CreateCommentResponseDto
+androidx.core.graphics.drawable.IconCompat
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer
+com.justcook.data.remote.dto.response.ChefStatsDto$Companion
+androidx.compose.ui.platform.DragAndDropModifierOnDragListener$modifier$1
+androidx.compose.ui.focus.FocusTargetNode$FocusTargetElement
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedLifecycleEntryPoint
+androidx.compose.ui.draw.PainterElement
+androidx.versionedparcelable.CustomVersionedParcelable
+com.justcook.data.remote.dto.response.RecipeListResponseDto
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+com.justcook.data.remote.dto.response.AuthResponseDto
+androidx.navigation.NavGraphNavigator
+com.justcook.android.MainActivity
+androidx.navigation.compose.DialogNavigator
+androidx.compose.foundation.text.modifiers.TextStringSimpleElement
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer
+androidx.compose.foundation.ClickableElement
+androidx.compose.ui.input.nestedscroll.NestedScrollElement
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer
+com.justcook.data.remote.dto.response.VoteResponseDto$Companion
+androidx.compose.ui.semantics.AppendedSemanticsElement
+com.justcook.data.remote.dto.request.MagicLinkRequestDto
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto
+com.justcook.feature.recipes.CommentsViewModel
+kotlinx.serialization.json.JsonArray$Companion
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$Companion
+com.justcook.data.remote.dto.request.EmailSignInRequestDto
+androidx.compose.foundation.gestures.DraggableElement
+com.justcook.data.remote.dto.request.FollowRequestDto
+androidx.compose.foundation.BackgroundElement
+androidx.compose.foundation.gestures.ScrollableElement
+com.justcook.data.remote.dto.response.BookmarksResponseDto
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer
+androidx.compose.foundation.layout.FillElement
+androidx.compose.foundation.BorderModifierNodeElement
+kotlinx.coroutines.internal.StackTraceRecoveryKt
+androidx.compose.ui.semantics.ClearAndSetSemanticsElement
+com.justcook.feature.profile.ChefProfileViewModel
+com.justcook.data.remote.dto.response.SessionDto$Companion
+androidx.core.app.RemoteActionCompat
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer
+androidx.compose.foundation.HoverableElement
+com.justcook.data.remote.dto.response.UserDto
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer
+androidx.room.MultiInstanceInvalidationService
+androidx.navigation.compose.ComposeNavGraphNavigator
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer
+androidx.versionedparcelable.ParcelImpl
+com.justcook.feature.recipes.RecipeCreateViewModel
+androidx.compose.foundation.layout.LayoutWeightElement
+androidx.compose.ui.graphics.BlockGraphicsLayerElement
+androidx.compose.ui.node.ForceUpdateElement
+androidx.compose.ui.graphics.GraphicsLayerElement
+com.justcook.data.remote.dto.response.CommentDto$$serializer
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer
+com.justcook.data.remote.dto.response.ChefProfileResponseDto
+com.justcook.data.remote.api.BookmarkApiService
+kotlinx.serialization.encoding.Encoder
+com.justcook.feature.home.HomeViewModel
+androidx.compose.foundation.MagnifierElement
+androidx.navigation.ActivityNavigator
+androidx.annotation.Keep
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer
+com.justcook.data.remote.dto.response.TrendingResponseDto$Companion
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ActivityCreatorEntryPoint
+com.justcook.core.database.JustCookDatabase_Impl
+com.justcook.data.remote.dto.response.CommentsResponseDto$Companion
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$Companion
+com.justcook.data.remote.dto.response.VoteResponseDto
+com.justcook.data.remote.dto.request.BookmarkRequestDto
+com.justcook.data.remote.dto.response.CommentRecipeDto
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$Companion
+com.justcook.data.remote.dto.request.StepInputDto$Companion
+com.justcook.data.remote.dto.request.StepInputDto
+com.justcook.data.remote.dto.response.FollowingResponseDto
+dagger.hilt.android.internal.managers.ActivityRetainedComponentManager$ActivityRetainedComponentBuilderEntryPoint
+com.justcook.feature.recipes.RecipeDetailViewModel
+androidx.compose.foundation.layout.AspectRatioElement
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer
+androidx.navigation.compose.ComposeNavigator
+com.justcook.data.remote.dto.response.AuthResponseDto$Companion
+com.justcook.core.database.JustCookDatabase
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer
+androidx.compose.ui.draw.DrawWithContentElement
+okhttp3.internal.publicsuffix.PublicSuffixDatabase
+com.justcook.data.remote.dto.response.UserDto$$serializer
+com.justcook.feature.profile.ProfileViewModel
+androidx.compose.ui.input.rotary.RotaryInputElement
+kotlinx.serialization.json.JsonNull
+androidx.core.app.CoreComponentFactory
+androidx.compose.foundation.layout.BoxChildDataElement
+com.justcook.data.remote.dto.response.ChefSummaryDto
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$Companion
+com.justcook.data.remote.dto.request.IngredientInputDto
+kotlinx.coroutines.CoroutineExceptionHandler
+com.justcook.data.remote.dto.response.IngredientDto$Companion
+androidx.compose.foundation.layout.UnspecifiedConstraintsElement
+dagger.hilt.android.internal.lifecycle.HiltViewModelFactory$ViewModelFactoriesEntryPoint
+com.justcook.data.remote.dto.response.CommentsResponseDto
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$Companion
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer
+com.justcook.data.remote.dto.response.ChefStatsDto
+com.justcook.data.remote.dto.response.RecipeDto
+androidx.compose.foundation.relocation.BringIntoViewRequesterElement
+androidx.compose.ui.input.pointer.SuspendPointerInputElement
+androidx.compose.foundation.layout.AlignmentLineOffsetDpElement
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer
+com.justcook.data.remote.dto.request.BookmarkRequestDto$Companion
+com.justcook.data.remote.dto.response.StepDto$Companion
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer
+androidx.compose.foundation.layout.WrapContentElement
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer
+kotlinx.serialization.json.JsonObject$Companion
+kotlinx.serialization.KSerializer
+com.justcook.data.remote.dto.response.BookmarksResponseDto$Companion
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto
+kotlinx.serialization.internal.PluginGeneratedSerialDescriptor
+com.justcook.data.remote.dto.response.CommentRecipeDto$Companion
+com.justcook.feature.bookmarks.BookmarksViewModel
+com.justcook.data.remote.dto.request.CreateCommentRequestDto
+com.justcook.android.MainActivity_GeneratedInjector
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$Companion
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto
+kotlinx.serialization.json.JsonElement$Companion
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto
+androidx.compose.foundation.ScrollingLayoutElement
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer
+dagger.hilt.android.internal.lifecycle.HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint
+com.justcook.data.remote.dto.response.DiscoverResponseDto
+androidx.compose.ui.layout.OnGloballyPositionedElement
+com.justcook.data.remote.dto.response.ChefSummaryDto$Companion
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$Companion
+com.justcook.data.remote.dto.response.StepDto$$serializer
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$Companion
+com.justcook.data.remote.dto.response.UserDto$Companion
+com.justcook.data.remote.dto.response.SessionResponseDto
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$Companion
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.VoteRequestDto: com.justcook.data.remote.dto.request.VoteRequestDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.PreferencesProto$Value DEFAULT_INSTANCE
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer INSTANCE
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
+com.justcook.data.remote.dto.request.CreateCommentRequestDto: com.justcook.data.remote.dto.request.CreateCommentRequestDto$Companion Companion
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: com.justcook.data.remote.dto.request.FollowRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.SessionResponseDto: com.justcook.data.remote.dto.response.SessionResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.ChefProfileResponseDto: com.justcook.data.remote.dto.response.ChefProfileResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer INSTANCE
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.PreferencesProto$PreferenceMap DEFAULT_INSTANCE
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.CommentDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.RecipeListResponseDto: com.justcook.data.remote.dto.response.RecipeListResponseDto$Companion Companion
+androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev
+com.justcook.feature.search.SearchUiState: com.justcook.feature.search.SearchUiState$Companion Companion
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.PreferencesProto$StringSet DEFAULT_INSTANCE
+com.justcook.data.remote.dto.response.AuthResponseDto: com.justcook.data.remote.dto.response.AuthResponseDto$Companion Companion
+com.justcook.data.remote.dto.request.FollowRequestDto: com.justcook.data.remote.dto.request.FollowRequestDto$Companion Companion
+androidx.datastore.preferences.protobuf.AbstractMessageLite: int memoizedHashCode
+com.justcook.data.remote.dto.response.CommentsResponseDto: com.justcook.data.remote.dto.response.CommentsResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.UserDto$$serializer: com.justcook.data.remote.dto.response.UserDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.request.EmailSignInRequestDto: com.justcook.data.remote.dto.request.EmailSignInRequestDto$Companion Companion
+kotlinx.serialization.json.JsonNull: kotlinx.serialization.json.JsonNull INSTANCE
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto: com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$Companion Companion
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Parser PARSER
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex
+com.justcook.domain.model.Difficulty: com.justcook.domain.model.Difficulty$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: java.lang.Object value_
+kotlinx.serialization.json.JsonArray: kotlinx.serialization.json.JsonArray$Companion Companion
+com.justcook.data.remote.dto.request.IngredientInputDto: com.justcook.data.remote.dto.request.IngredientInputDto$Companion Companion
+kotlin.SafePublicationLazyImpl: java.lang.Object _value
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+com.justcook.data.remote.dto.response.SessionDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: com.justcook.data.remote.dto.response.IngredientDto$$serializer INSTANCE
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus
+kotlinx.coroutines.sync.SemaphoreImpl: java.lang.Object head
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState
+kotlinx.coroutines.InvokeOnCancelling: int _invoked
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.BookmarksResponseDto: com.justcook.data.remote.dto.response.BookmarksResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.IngredientDto: com.justcook.data.remote.dto.response.IngredientDto$Companion Companion
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex
+com.justcook.data.remote.dto.response.CommentDto$$serializer: com.justcook.data.remote.dto.response.CommentDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto: com.justcook.data.remote.dto.response.DeleteCommentResponseDto$Companion Companion
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto: com.justcook.data.remote.dto.request.CreateRecipeRequestDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int STRING_SET_FIELD_NUMBER
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+kotlinx.coroutines.sync.SemaphoreImpl: long enqIdx
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto: com.justcook.data.remote.dto.response.TrendingChefsResponseDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int DOUBLE_FIELD_NUMBER
+kotlinx.coroutines.ThreadState: int _state
+androidx.navigation.NavBackStackEntryState: android.os.Parcelable$Creator CREATOR
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.CommentDto: com.justcook.data.remote.dto.response.CommentDto$Companion Companion
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl
+kotlinx.coroutines.sync.SemaphoreImpl: long deqIdx
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: com.justcook.data.remote.dto.request.StepInputDto$$serializer INSTANCE
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers
+com.justcook.data.remote.dto.request.BookmarkRequestDto: com.justcook.data.remote.dto.request.BookmarkRequestDto$Companion Companion
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer INSTANCE
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.MapFieldLite preferences_
+com.justcook.data.remote.dto.response.UserDto: com.justcook.data.remote.dto.response.UserDto$Companion Companion
+kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto: com.justcook.data.remote.dto.response.RecipeDetailResponseDto$Companion Companion
+kotlinx.coroutines.channels.BufferedChannel: long receivers
+kotlinx.coroutines.DispatchedCoroutine: int _decision
+com.justcook.data.remote.dto.request.StepInputDto: com.justcook.data.remote.dto.request.StepInputDto$Companion Companion
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto: com.justcook.data.remote.dto.request.EmailSignUpRequestDto$Companion Companion
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto: com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int LONG_FIELD_NUMBER
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.datastore.preferences.PreferencesProto$Value: int valueCase_
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: com.justcook.data.remote.dto.response.SessionResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.StepDto$$serializer: com.justcook.data.remote.dto.response.StepDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+androidx.datastore.preferences.PreferencesProto$Value: int BOOLEAN_FIELD_NUMBER
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto: com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$Companion Companion
+com.justcook.data.remote.dto.response.SessionDto$$serializer: com.justcook.data.remote.dto.response.SessionDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.StepDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: com.justcook.data.remote.dto.request.IngredientInputDto$$serializer INSTANCE
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: com.justcook.data.remote.dto.request.VoteRequestDto$$serializer INSTANCE
+kotlinx.coroutines.sync.SemaphoreImpl: java.lang.Object tail
+kotlinx.coroutines.CancelledContinuation: int _resumed
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.RecipeDto: com.justcook.data.remote.dto.response.RecipeDto$Companion Companion
+com.justcook.data.remote.dto.response.StepDto: com.justcook.data.remote.dto.response.StepDto$Companion Companion
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause
+kotlinx.serialization.json.JsonObject: kotlinx.serialization.json.JsonObject$Companion Companion
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer INSTANCE
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.protobuf.Parser PARSER
+kotlinx.coroutines.android.HandlerContext: kotlinx.coroutines.android.HandlerContext _immediate
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: com.justcook.data.remote.dto.response.AuthResponseDto$$serializer INSTANCE
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.Parser PARSER
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: com.justcook.data.remote.dto.response.VoteResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer INSTANCE
+kotlinx.coroutines.JobSupport: java.lang.Object _state
+com.justcook.data.remote.dto.response.CreateCommentResponseDto: com.justcook.data.remote.dto.response.CreateCommentResponseDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int INTEGER_FIELD_NUMBER
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer INSTANCE
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: androidx.datastore.preferences.protobuf.UnknownFieldSetLite unknownFields
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.room.RoomDatabase: androidx.room.RoomDatabase$Companion Companion
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.ChefStatsDto: com.justcook.data.remote.dto.response.ChefStatsDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int STRING_FIELD_NUMBER
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int memoizedSerializedSize
+kotlinx.coroutines.flow.StateFlowSlot: java.lang.Object _state
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner
+com.justcook.data.remote.dto.response.FollowingResponseDto: com.justcook.data.remote.dto.response.FollowingResponseDto$Companion Companion
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.internal.AtomicOp: java.lang.Object _consensus
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer INSTANCE
+kotlinx.coroutines.CompletedExceptionally: int _handled
+androidx.datastore.preferences.PreferencesProto$StringSet: int STRINGS_FIELD_NUMBER
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer INSTANCE
+com.justcook.domain.model.ProfileTier: com.justcook.domain.model.ProfileTier$Companion Companion
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.MagicLinkRequestDto: com.justcook.data.remote.dto.request.MagicLinkRequestDto$Companion Companion
+androidx.datastore.preferences.PreferencesProto$Value: int FLOAT_FIELD_NUMBER
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto: com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$Companion Companion
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer INSTANCE
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers
+com.justcook.data.remote.dto.response.ChefSummaryDto: com.justcook.data.remote.dto.response.ChefSummaryDto$Companion Companion
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer INSTANCE
+kotlinx.coroutines.sync.SemaphoreImpl: int _availablePermits
+coil.memory.MemoryCache$Key: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Internal$ProtobufList strings_
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd
+com.justcook.data.remote.dto.response.CommentRecipeDto: com.justcook.data.remote.dto.response.CommentRecipeDto$Companion Companion
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto: com.justcook.data.remote.dto.request.DeleteCommentRequestDto$Companion Companion
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto: com.justcook.data.remote.dto.response.CreateRecipeResponseDto$Companion Companion
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: java.util.Map defaultInstanceMap
+com.justcook.data.remote.dto.response.TrendingResponseDto: com.justcook.data.remote.dto.response.TrendingResponseDto$Companion Companion
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: com.justcook.data.remote.dto.response.ChefStatsDto$$serializer INSTANCE
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: int PREFERENCES_FIELD_NUMBER
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+kotlinx.serialization.json.JsonPrimitive: kotlinx.serialization.json.JsonPrimitive$Companion Companion
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment
+androidx.datastore.preferences.PreferencesProto$Value: int bitField0_
+com.justcook.data.remote.dto.response.DiscoverResponseDto: com.justcook.data.remote.dto.response.DiscoverResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer INSTANCE
+kotlinx.serialization.json.JsonElement: kotlinx.serialization.json.JsonElement$Companion Companion
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: com.justcook.data.remote.dto.response.RecipeDto$$serializer INSTANCE
+com.justcook.data.remote.dto.response.UserDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer INSTANCE
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer INSTANCE
+kotlin.coroutines.SafeContinuation: java.lang.Object result
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+com.justcook.data.remote.dto.response.SessionDto: com.justcook.data.remote.dto.response.SessionDto$Companion Companion
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: kotlinx.serialization.internal.PluginGeneratedSerialDescriptor descriptor
+androidx.compose.foundation.lazy.layout.DefaultLazyKey: android.os.Parcelable$Creator CREATOR
+com.justcook.data.remote.dto.response.VoteResponseDto: com.justcook.data.remote.dto.response.VoteResponseDto$Companion Companion
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.content.ContextCompat$Api23Impl: java.lang.String getSystemServiceName(android.content.Context,java.lang.Class)
+androidx.compose.ui.graphics.TileModeVerificationHelper: int getComposeTileModeDecal-3opZhB0()
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.profileinstaller.ProfileInstallerInitializer$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
+androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: ChefProfileResponseDto$$serializer()
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: com.justcook.data.remote.dto.response.BookmarkToggleResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
+androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.content.ContextCompat$Api21Impl: android.graphics.drawable.Drawable getDrawable(android.content.Context,int)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+coil.request.CachePolicy: coil.request.CachePolicy[] values()
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: com.justcook.data.remote.dto.request.EmailSignInRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getRecipeBySlug(java.lang.String,kotlin.coroutines.Continuation)
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledVerticalScrollFactor(android.view.ViewConfiguration)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
+androidx.compose.ui.text.android.StaticLayoutFactory23: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
+androidx.activity.Api34Impl: float progress(android.window.BackEvent)
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: com.justcook.data.remote.dto.response.ChefStatsDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+androidx.compose.ui.focus.FocusTargetNode$FocusTargetElement: FocusTargetNode$FocusTargetElement()
+androidx.core.view.ViewCompat$Api21Impl: void setZ(android.view.View,float)
+androidx.core.view.ViewCompat$Api21Impl: java.lang.String getTransitionName(android.view.View)
+com.justcook.data.remote.dto.response.SessionDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: com.justcook.data.remote.dto.response.CommentDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.core.database.JustCookDatabase_Impl: JustCookDatabase_Impl()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.core.os.TraceCompat$Api18Impl: void endSection()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getFillAlpha()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.compose.ui.autofill.AutofillApi26Helper: android.view.autofill.AutofillId getAutofillId(android.view.ViewStructure)
+androidx.exifinterface.media.ExifInterfaceUtils$Api23Impl: void setDataSource(android.media.MediaMetadataRetriever,android.media.MediaDataSource)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
+androidx.core.content.ContextCompat$Api23Impl: int getColor(android.content.Context,int)
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api23Impl: int getScrollIndicators(android.view.View)
+androidx.compose.ui.platform.RenderNodeVerificationHelper23: void destroyDisplayListData(android.view.RenderNode)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState: int getChangingConfigurations()
+androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.window.PopupLayout: void setClippingEnabled(boolean)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setContainerTitle(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getResId(java.lang.Object)
+androidx.core.util.ObjectsCompat$Api19Impl: boolean equals(java.lang.Object,java.lang.Object)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintList(android.view.View,android.content.res.ColorStateList)
+androidx.core.text.ICUCompat$Api24Impl: java.lang.String getScript(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
+androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: com.justcook.data.remote.dto.response.TrendingResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: com.justcook.data.remote.dto.request.DeleteCommentRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+com.justcook.domain.model.ProfileTier: com.justcook.domain.model.ProfileTier[] values()
+androidx.compose.ui.window.PopupLayout: void getParams$ui_release$annotations()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getStrokeColor()
+androidx.compose.foundation.Api31Impl: float onPullDistance(android.widget.EdgeEffect,float,float)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeColor(int)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: com.justcook.data.remote.dto.request.VoteRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.api.AuthApiService: java.lang.Object signUpWithEmail(com.justcook.data.remote.dto.request.EmailSignUpRequestDto,kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.graphics.WrapperVerificationHelperMethods: void setBlendMode-GB0RdKg(android.graphics.Paint,int)
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: TrendingResponseDto$$serializer()
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Drawable loadDrawable(android.graphics.drawable.Icon,android.content.Context)
+androidx.compose.material3.MinimumInteractiveModifier: MinimumInteractiveModifier()
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.text.ICUCompat$Api24Impl: android.icu.util.ULocale addLikelySubtags(java.lang.Object)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.IngredientInputDto)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewTextChanged(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,java.lang.CharSequence)
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: java.lang.String getPathName()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeAlpha()
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.StepDto$$serializer: com.justcook.data.remote.dto.response.StepDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.compose.foundation.layout.SizeMode: androidx.compose.foundation.layout.SizeMode valueOf(java.lang.String)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: java.lang.Object createRangeInfo(int,float,float,float)
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.BookmarkToggleResponseDto)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setSpotShadowColor(android.view.RenderNode,int)
+kotlin.random.Random: Random()
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.VoteResponseDto)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeWidth(float)
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.ViewCompat$Api16Impl: boolean performAccessibilityAction(android.view.View,int,android.os.Bundle)
+androidx.core.view.ViewCompat$Api19Impl: boolean isAttachedToWindow(android.view.View)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
+androidx.core.view.ViewCompat$Api21Impl: float getZ(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.View)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: UpdateRecipeRequestDto$$serializer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: android.graphics.ColorSpace androidColorSpace(androidx.compose.ui.graphics.colorspace.ColorSpace)
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isToggle(android.view.autofill.AutofillValue)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getStrokeWidth()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest getRootForTest()
+com.justcook.data.remote.dto.response.CommentDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.CommentDto)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotX()
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.ChefSummaryDto)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: java.lang.String getResPackage(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetBottom(android.view.DisplayCutout)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: java.lang.CharSequence getContainerTitle(android.view.accessibility.AccessibilityNodeInfo)
+com.justcook.data.remote.api.BookmarkApiService: java.lang.Object getBookmarks(kotlin.coroutines.Continuation)
+androidx.core.content.res.ResourcesCompat$Api21Impl: android.graphics.drawable.Drawable getDrawableForDensity(android.content.res.Resources,int,int,android.content.res.Resources$Theme)
+androidx.core.view.ViewCompat$Api29Impl: void setSystemGestureExclusionRects(android.view.View,java.util.List)
+androidx.compose.ui.window.PopupLayout: void setSecurePolicy(androidx.compose.ui.window.SecureFlagPolicy)
+androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
+androidx.profileinstaller.ProfileVerifier$Api33Impl: android.content.pm.PackageInfo getPackageInfo(android.content.pm.PackageManager,android.content.Context)
+androidx.core.graphics.Insets$Api29Impl: android.graphics.Insets of(int,int,int,int)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.ViewCompat$Api21Impl: void setTranslationZ(android.view.View,float)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState valueOf(java.lang.String)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getChefProfile(java.lang.String,kotlin.coroutines.Continuation)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.text.platform.Api28Impl: android.text.style.TypefaceSpan createTypefaceSpan(android.graphics.Typeface)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Icon createWithAdaptiveBitmap(android.graphics.Bitmap)
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: com.justcook.data.remote.dto.response.ChefProfileResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: DiscoverResponseDto$$serializer()
+androidx.compose.ui.semantics.EmptySemanticsElement: EmptySemanticsElement()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.material3.InputPhase: androidx.compose.material3.InputPhase[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathStart()
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode[] values()
+androidx.compose.ui.text.android.StaticLayoutFactory33: boolean isFallbackLineSpacingEnabled(android.text.StaticLayout)
+androidx.compose.foundation.text.selection.HandleReferencePoint: androidx.compose.foundation.text.selection.HandleReferencePoint valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+kotlin.collections.AbstractMutableSet: AbstractMutableSet()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.core.view.ViewConfigurationCompat$Api26Impl: float getScaledHorizontalScrollFactor(android.view.ViewConfiguration)
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreScroll(android.view.View,int,int,int[],int[])
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType[] values()
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo,long)
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.graphics.drawable.IconCompat$Api30Impl: android.graphics.drawable.Icon createWithAdaptiveBitmapContentUri(android.net.Uri)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.text.TextUtilsCompat$Api17Impl: int getLayoutDirectionFromLocale(java.util.Locale)
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: void setTextLocales(androidx.compose.ui.text.platform.AndroidTextPaint,androidx.compose.ui.text.intl.LocaleList)
+com.justcook.data.remote.dto.response.AuthResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.content.ContextCompat$Api23Impl: java.lang.Object getSystemService(android.content.Context,java.lang.Class)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetLeft(android.view.DisplayCutout)
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.core.content.ContextCompat$Api16Impl: void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+kotlinx.serialization.json.JsonNull: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AccessibilityNodeInfoVerificationHelperMethods: void setAvailableExtraData(android.view.accessibility.AccessibilityNodeInfo,java.util.List)
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.AccessibilityDelegateCompat$Api16Impl: android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View$AccessibilityDelegate,android.view.View)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat buildCollectionItemInfoCompat(boolean,int,int,int,int,boolean,java.lang.String,java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
+androidx.core.view.ViewCompat$Api28Impl: void addOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.appcompat.resources.Compatibility$Api18Impl: void setAutoCancel(android.animation.ObjectAnimator,boolean)
+androidx.core.view.ViewCompat$Api21Impl: void setNestedScrollingEnabled(android.view.View,boolean)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: void setAmbientShadowColor(android.view.RenderNode,int)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.IngredientDto)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetRight(android.view.DisplayCutout)
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Rect,java.util.List)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+com.justcook.data.remote.dto.response.DiscoverResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.ChefProfileResponseDto)
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType valueOf(java.lang.String)
+com.justcook.data.remote.api.AuthApiService: java.lang.Object signOut(kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.content.res.FontResourcesParserCompat$Api21Impl: int getType(android.content.res.TypedArray,int)
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.UserDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeView: void setConfigurationChangeObserver(kotlin.jvm.functions.Function1)
+kotlinx.serialization.json.internal.WriteMode: kotlinx.serialization.json.internal.WriteMode[] values()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getTrendingRecipes(java.lang.String,kotlin.coroutines.Continuation)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.SessionDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.material3.TextFieldType: androidx.compose.material3.TextFieldType[] values()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.ViewLayerContainer: void dispatchGetDisplayList()
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotY(float)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.ChefStatsDto)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathOffset(float)
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: com.justcook.data.remote.dto.request.CreateCommentRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: MagicLinkRequestDto$$serializer()
+com.justcook.data.remote.dto.request.IngredientInputDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+com.justcook.data.remote.dto.response.StepDto$$serializer: StepDto$$serializer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: kotlin.jvm.functions.Function1 getConfigurationChangeObserver()
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: EmailSignInRequestDto$$serializer()
+androidx.exifinterface.media.ExifInterfaceUtils$Api21Impl: java.io.FileDescriptor dup(java.io.FileDescriptor)
+androidx.core.view.ViewCompat$Api16Impl: int getImportantForAccessibility(android.view.View)
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.core.os.BundleApi18ImplKt: void putBinder(android.os.Bundle,java.lang.String,android.os.IBinder)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize[] values()
+androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui_release()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$ViewTranslationHelperMethodsS: void onVirtualViewTranslationResponses(androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat,android.util.LongSparseArray)
+androidx.core.content.ContextCompat$Api16Impl: void startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus[] values()
+androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
+androidx.core.view.ViewCompat$Api16Impl: boolean hasTransientState(android.view.View)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi23Helper: void setId(android.view.ViewStructure,int,java.lang.String,java.lang.String,java.lang.String)
+androidx.profileinstaller.ProfileInstallerInitializer$Choreographer16Impl: void postFrameCallback(java.lang.Runnable)
+androidx.core.view.ViewCompat$Api19Impl: void setContentChangeTypes(android.view.accessibility.AccessibilityEvent,int)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api26Impl: android.view.autofill.AutofillId getAutofillId(android.view.View)
+androidx.core.view.ViewCompat$Api28Impl: void setAutofillId(android.view.View,android.view.autofill.AutofillId)
+androidx.core.graphics.drawable.DrawableCompat$Api19Impl: android.graphics.drawable.Drawable getChild(android.graphics.drawable.DrawableContainer$DrawableContainerState,int)
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.FollowRequestDto)
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: com.justcook.data.remote.dto.response.ChefSummaryDto deserialize(kotlinx.serialization.encoding.Decoder)
+okhttp3.Protocol: okhttp3.Protocol valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityPaneTitle(android.view.View,java.lang.CharSequence)
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int,int)
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimation(android.view.View,java.lang.Runnable)
+androidx.compose.ui.window.PopupLayout: int getDisplayWidth()
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: com.justcook.data.remote.dto.request.StepInputDto deserialize(kotlinx.serialization.encoding.Decoder)
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
+androidx.core.view.ViewCompat$Api16Impl: void setBackground(android.view.View,android.graphics.drawable.Drawable)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State[] values()
+androidx.core.graphics.drawable.DrawableCompat$Api19Impl: boolean isAutoMirrored(android.graphics.drawable.Drawable)
+kotlinx.coroutines.android.AndroidDispatcherFactory: java.lang.String hintOnError()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setText(android.view.ViewStructure,java.lang.CharSequence)
+androidx.core.view.ViewCompat$Api19Impl: boolean isLayoutDirectionResolved(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathEnd()
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: com.justcook.data.remote.dto.response.RecipeDetailResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.navigation.compose.BackStackEntryIdViewModel: BackStackEntryIdViewModel(androidx.lifecycle.SavedStateHandle)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setRootAlpha(int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemRowTitle(java.lang.Object)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getComments(java.lang.String,kotlin.coroutines.Continuation)
+androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
+androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
+androidx.core.graphics.drawable.DrawableCompat$Api19Impl: android.graphics.drawable.Drawable getDrawable(android.graphics.drawable.InsetDrawable)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: void setStateDescription(android.view.accessibility.AccessibilityNodeInfo,java.lang.CharSequence)
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: com.justcook.data.remote.dto.request.ForgotPasswordRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.graphics.Api26Bitmap: android.graphics.Bitmap createBitmap-x__-hDU$ui_graphics_release(int,int,int,boolean,androidx.compose.ui.graphics.colorspace.ColorSpace)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getSpotShadowColor(android.view.RenderNode)
+androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
+androidx.navigation.NavControllerViewModel: NavControllerViewModel()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.SessionDto)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api28Impl: java.lang.Object requireViewById(android.view.View,int)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
+com.justcook.data.remote.dto.response.RecipeListResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation[] values()
+androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.appcompat.resources.Compatibility$Api21Impl: int getChangingConfigurations(android.content.res.TypedArray)
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.MagicLinkRequestDto)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.appcompat.resources.Compatibility$Api21Impl: android.graphics.drawable.Drawable createFromXmlInner(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.activity.EdgeToEdgeApi21: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.AuthResponseDto)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean isAccessibilityDataSensitive(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
+androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
+com.justcook.data.remote.dto.response.StepDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.CommentDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object createRecipe(com.justcook.data.remote.dto.request.CreateRecipeRequestDto,kotlin.coroutines.Continuation)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
+androidx.core.view.ViewCompat$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: int getRootAlpha()
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.UserDto$$serializer: com.justcook.data.remote.dto.response.UserDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.IngredientDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getRecipesByAuthor(java.lang.String,kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api29Impl: void addPageActions(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.CreateRecipeRequestDto)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void inflate(android.graphics.drawable.Drawable,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+androidx.activity.EdgeToEdgeApi23: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+com.justcook.data.remote.dto.response.UserDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.graphics.drawable.DrawableCompat$Api19Impl: void setAutoMirrored(android.graphics.drawable.Drawable,boolean)
+com.justcook.core.datastore.ThemeMode: com.justcook.core.datastore.ThemeMode valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.platform.RenderNodeVerificationHelper28: int getAmbientShadowColor(android.view.RenderNode)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void setHotspotBounds(android.graphics.drawable.Drawable,int,int,int,int)
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object followUser(com.justcook.data.remote.dto.request.FollowRequestDto,kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api16Impl: void setImportantForAccessibility(android.view.View,int)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: com.justcook.data.remote.dto.request.IngredientInputDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: android.graphics.ColorFilter getColorFilter(android.graphics.drawable.Drawable)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
+androidx.core.view.ViewCompat$Api21Impl: float getTranslationZ(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: com.justcook.data.remote.dto.request.BookmarkRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isList(android.view.autofill.AutofillValue)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillType(android.view.ViewStructure,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+okhttp3.internal.publicsuffix.PublicSuffixDatabase: PublicSuffixDatabase()
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.os.BundleApi21ImplKt: void putSizeF(android.os.Bundle,java.lang.String,android.util.SizeF)
+androidx.core.view.ViewCompat$Api19Impl: boolean isLaidOut(android.view.View)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.platform.ViewLayer: void setInvalidated(boolean)
+androidx.compose.ui.platform.ViewLayer$UniqueDrawingIdApi29: long getUniqueDrawingId(android.view.View)
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: float getAlpha()
+com.justcook.data.remote.dto.response.BookmarksResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: DeleteCommentResponseDto$$serializer()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
+com.justcook.domain.model.Difficulty: com.justcook.domain.model.Difficulty[] values()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.app.NotificationManagerCompat$Api24Impl: int getImportance(android.app.NotificationManager)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateX(float)
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.graphics.Insets getWaterfallInsets(android.view.DisplayCutout)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: DeleteCommentRequestDto$$serializer()
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: com.justcook.data.remote.dto.response.TrendingChefsResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.foundation.Api31Impl: android.widget.EdgeEffect create(android.content.Context,android.util.AttributeSet)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.Object createRangeInfo(int,float,float,float)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
+androidx.core.view.ViewCompat$Api29Impl: void setContentCaptureSession(android.view.View,android.view.contentcapture.ContentCaptureSession)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleY(float)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
+androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.EmailSignInRequestDto)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.graphics.Path getManualClipPath()
+com.justcook.data.remote.dto.response.VoteResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setClassName(android.view.ViewStructure,java.lang.String)
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.BookmarksResponseDto)
+com.justcook.data.remote.dto.response.StepDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.core.view.ViewCompat$Api21Impl: void setBackgroundTintMode(android.view.View,android.graphics.PorterDuff$Mode)
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult[] values()
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.UserDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.UserDto)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.ViewCompat$Api30Impl: int getImportantForContentCapture(android.view.View)
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
+androidx.compose.ui.text.font.TypefaceHelperMethodsApi28: android.graphics.Typeface create(android.graphics.Typeface,int,boolean)
+com.justcook.data.remote.dto.response.SessionDto$$serializer: SessionDto$$serializer()
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.navigation.compose.DialogNavigator: DialogNavigator()
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets dispatchApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.ViewStructure newVirtualViewStructure(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode[] values()
+androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api16Impl: android.view.ViewParent getParentForAccessibility(android.view.View)
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType[] values()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedScroll(android.view.View,int,int,int,int,int[])
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setTextSelectable(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: com.justcook.data.remote.dto.request.MagicLinkRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setPivotX(float)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.compose.ui.graphics.ColorSpaceVerificationHelper: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace(android.graphics.ColorSpace)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: int getSafeInsetTop(android.view.DisplayCutout)
+com.justcook.data.remote.dto.response.StepDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level valueOf(java.lang.String)
+androidx.core.graphics.drawable.IconCompat$Api26Impl: android.graphics.drawable.Drawable createAdaptiveIconDrawable(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType[] values()
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: com.justcook.data.remote.dto.request.CreateRecipeRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.TextToolbarHelperMethods: void invalidateContentRect(android.view.ActionMode)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.core.view.ViewCompat$Api23Impl: void setScrollIndicators(android.view.View,int)
+androidx.core.view.ViewCompat$Api16Impl: boolean getFitsSystemWindows(android.view.View)
+coil.size.Precision: coil.size.Precision valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+coil.size.Scale: coil.size.Scale valueOf(java.lang.String)
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathStart(float)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.StepInputDto)
+kotlinx.serialization.json.JsonPrimitive$Companion: kotlinx.serialization.KSerializer serializer()
+coil.size.Precision: coil.size.Precision[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+com.justcook.data.remote.dto.response.UserDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getFollowing(kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.provider.FontProvider$Api16Impl: android.database.Cursor query(android.content.ContentResolver,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.Object)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: EmailSignUpRequestDto$$serializer()
+androidx.core.view.ViewCompat$Api29Impl: void saveAttributeDataForStyleable(android.view.View,android.content.Context,int[],android.util.AttributeSet,android.content.res.TypedArray,int,int)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
+androidx.compose.ui.autofill.AutofillApi23Helper: void setDimens(android.view.ViewStructure,int,int,int,int,int,int)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: com.justcook.data.remote.dto.request.UpdateRecipeRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api23Impl: android.os.Bundle getExtras(android.view.ViewStructure)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.foundation.layout.LayoutOrientation: androidx.compose.foundation.layout.LayoutOrientation valueOf(java.lang.String)
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: androidx.compose.ui.graphics.BlendModeColorFilter createBlendModeColorFilter(android.graphics.BlendModeColorFilter)
+coil.decode.ExifOrientationPolicy: coil.decode.ExifOrientationPolicy[] values()
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.VoteRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isText(android.view.autofill.AutofillValue)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+coil.size.Scale: coil.size.Scale[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getCollectionItemColumnTitle(java.lang.Object)
+okhttp3.TlsVersion: okhttp3.TlsVersion[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.FollowingResponseDto)
+androidx.compose.foundation.FocusableKt$FocusableInNonTouchModeElement$1: FocusableKt$FocusableInNonTouchModeElement$1()
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.CommentsResponseDto)
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setTextStyle(android.view.ViewStructure,float,int,int,int)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object createComment(com.justcook.data.remote.dto.request.CreateCommentRequestDto,kotlin.coroutines.Continuation)
+androidx.core.app.NotificationManagerCompat$Api24Impl: boolean areNotificationsEnabled(android.app.NotificationManager)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: long getMinDurationBetweenContentChangeMillis(android.view.accessibility.AccessibilityNodeInfo)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.ViewCompat$Api19Impl: void setAccessibilityLiveRegion(android.view.View,int)
+androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: com.justcook.data.remote.dto.response.RecipeListResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.input.pointer.MotionEventHelper: long toRawOffset-dBAh8RU(android.view.MotionEvent,int)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
+com.justcook.data.remote.dto.request.FollowRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api16Impl: android.view.accessibility.AccessibilityNodeProvider getAccessibilityNodeProvider(android.view.View)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.UserDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.ViewCompat$Api30Impl: boolean isImportantForContentCapture(android.view.View)
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.RecipeDto)
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View)
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.autofill.AutofillApi23Helper: android.view.ViewStructure newChild(android.view.ViewStructure,int)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+androidx.compose.ui.text.input.CursorAnchorInfoApi33Helper: android.view.inputmethod.CursorAnchorInfo$Builder setEditorBoundsInfo(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.geometry.Rect)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: com.justcook.data.remote.dto.response.IngredientDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.api.AuthApiService: java.lang.Object getSession(kotlin.coroutines.Continuation)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
+androidx.core.text.ICUCompat$Api21Impl: java.lang.String getScript(java.util.Locale)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType valueOf(java.lang.String)
+androidx.compose.ui.text.android.StaticLayoutFactory28: void setUseLineSpacingFromFallbacks(android.text.StaticLayout$Builder,boolean)
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
+androidx.compose.ui.text.android.StaticLayoutFactoryImpl: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: com.justcook.data.remote.dto.request.GoogleCallbackRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: android.os.Bundle getExtras(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.platform.WrapperRenderNodeLayerHelperMethods: void onDescendantInvalidated(androidx.compose.ui.platform.AndroidComposeView)
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getParent(android.view.accessibility.AccessibilityNodeInfo,int)
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
+com.justcook.data.remote.dto.response.CommentDto$$serializer: CommentDto$$serializer()
+okhttp3.Protocol: okhttp3.Protocol[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.appcompat.resources.Compatibility$Api21Impl: void inflate(android.graphics.drawable.Drawable,android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources$Theme)
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder valueOf(java.lang.String)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: boolean hasRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.view.WindowCompat$Api30Impl: void setDecorFitsSystemWindows(android.view.Window,boolean)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName[] values()
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+com.justcook.data.remote.dto.response.RecipeDto$Companion: kotlinx.serialization.KSerializer serializer()
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.exifinterface.media.ExifInterfaceUtils$Api21Impl: long lseek(java.io.FileDescriptor,long,int)
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.ForgotPasswordRequestDto)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: CreateRecipeRequestDto$$serializer()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax[] values()
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
+com.justcook.android.MainActivity: MainActivity()
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.CreateRecipeResponseDto)
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: FollowRequestDto$$serializer()
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.ViewCompat$Api19Impl: void notifySubtreeAccessibilityStateChanged(android.view.ViewParent,android.view.View,android.view.View,int)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void getBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
+androidx.compose.ui.platform.ViewLayer: float getCameraDistancePx()
+androidx.navigation.NavBackStackEntry$SavedStateViewModel: NavBackStackEntry$SavedStateViewModel(androidx.lifecycle.SavedStateHandle)
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$ViewTranslationHelperMethodsS: void onCreateVirtualViewTranslationRequests(androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat,long[],int[],java.util.function.Consumer)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: android.view.accessibility.AccessibilityNodeInfo$ExtraRenderingInfo getExtraRenderingInfo(android.view.accessibility.AccessibilityNodeInfo)
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection valueOf(java.lang.String)
+androidx.compose.material3.InputPhase: androidx.compose.material3.InputPhase valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+com.justcook.data.remote.dto.response.SessionResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api29Impl: java.util.List getSystemGestureExclusionRects(android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+androidx.compose.ui.autofill.AutofillCallback: void register(androidx.compose.ui.autofill.AndroidAutofill)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: IngredientInputDto$$serializer()
+okhttp3.TlsVersion: okhttp3.TlsVersion valueOf(java.lang.String)
+androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
+androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+com.justcook.data.remote.dto.response.UserDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: com.justcook.data.remote.dto.response.CreateCommentResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.compose.ui.text.android.Paint29: void getTextBounds(android.graphics.Paint,java.lang.CharSequence,int,int,android.graphics.Rect)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
+coil.decode.DataSource: coil.decode.DataSource[] values()
+com.justcook.data.remote.api.AuthApiService: java.lang.Object forgotPassword(com.justcook.data.remote.dto.request.ForgotPasswordRequestDto,kotlin.coroutines.Continuation)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout$Metrics isBoring(java.lang.CharSequence,android.text.TextPaint,android.text.TextDirectionHeuristic)
+androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.BookmarkRequestDto)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api21Impl: void setElevation(android.view.View,float)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: com.justcook.data.remote.dto.request.FollowRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.core.view.AccessibilityDelegateCompat$Api16Impl: boolean performAccessibilityAction(android.view.View$AccessibilityDelegate,android.view.View,int,android.os.Bundle)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
+kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: void setUniqueId(android.view.accessibility.AccessibilityNodeInfo,java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getRotation()
+androidx.core.view.ViewCompat$Api28Impl: void removeOnUnhandledKeyEventListener(android.view.View,androidx.core.view.ViewCompat$OnUnhandledKeyEventListenerCompat)
+com.justcook.data.remote.api.BookmarkApiService: java.lang.Object toggleBookmark(com.justcook.data.remote.dto.request.BookmarkRequestDto,kotlin.coroutines.Continuation)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+androidx.compose.ui.text.android.BoringLayoutFactory33: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateX()
+androidx.core.graphics.drawable.IconCompat: IconCompat()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillColor(int)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: com.justcook.data.remote.dto.response.AuthResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.android.JustCookApplication: JustCookApplication()
+androidx.compose.ui.platform.RenderNodeApi29VerificationHelper: void setRenderEffect(android.graphics.RenderNode,androidx.compose.ui.graphics.RenderEffect)
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: RecipeDetailResponseDto$$serializer()
+androidx.exifinterface.media.ExifInterfaceUtils$Api21Impl: void close(java.io.FileDescriptor)
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.net.Uri getUri(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui_release(long)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setScaleX(float)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleX()
+androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui_release()
+okhttp3.internal.http2.ErrorCode: okhttp3.internal.http2.ErrorCode valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: SessionResponseDto$$serializer()
+com.justcook.data.remote.dto.response.ChefStatsDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View,android.view.translation.ViewTranslationCallback)
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.DiscoverResponseDto)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object searchRecipes(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.EmailSignUpRequestDto)
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.CommentRecipeDto)
+com.justcook.data.remote.dto.response.CommentsResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api21Impl: androidx.core.view.WindowInsetsCompat computeSystemWindowInsets(android.view.View,androidx.core.view.WindowInsetsCompat,android.graphics.Rect)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.ui.platform.ViewLayerVerificationHelper31: void setRenderEffect(android.view.View,androidx.compose.ui.graphics.RenderEffect)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void setHotspot(android.graphics.drawable.Drawable,float,float)
+androidx.core.view.ViewCompat$Api16Impl: void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+com.justcook.core.database.JustCookDatabase: JustCookDatabase()
+kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
+com.justcook.data.remote.dto.response.UserDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setRequestInitialAccessibilityFocus(android.view.accessibility.AccessibilityNodeInfo,boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
+com.justcook.data.remote.dto.request.StepInputDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.accessibility.AccessibilityNodeInfo)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+androidx.core.view.ViewCompat$Api16Impl: void setHasTransientState(android.view.View,boolean)
+androidx.core.content.ContextCompat$Api21Impl: java.io.File getCodeCacheDir(android.content.Context)
+kotlinx.coroutines.android.AndroidDispatcherFactory: kotlinx.coroutines.MainCoroutineDispatcher createDispatcher(java.util.List)
+androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
+kotlin.collections.AbstractList: AbstractList()
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$Api24Impl: void addSetProgressAction(androidx.core.view.accessibility.AccessibilityNodeInfoCompat,androidx.compose.ui.semantics.SemanticsNode)
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
+androidx.compose.material3.TextFieldType: androidx.compose.material3.TextFieldType valueOf(java.lang.String)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+androidx.room.Index$Order: androidx.room.Index$Order valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.TrendingResponseDto)
+androidx.compose.ui.platform.coreshims.ViewCompatShims$Api30Impl: void setImportantForContentCapture(android.view.View,int)
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.core.content.res.ResourcesCompat$Api21Impl: android.graphics.drawable.Drawable getDrawable(android.content.res.Resources,int,android.content.res.Resources$Theme)
+androidx.core.graphics.PaintCompat$Api23Impl: boolean hasGlyph(android.graphics.Paint,java.lang.String)
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: com.justcook.data.remote.dto.response.RecipeDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: android.view.autofill.AutofillId newAutofillId(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: float getTrimPathOffset()
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+kotlinx.serialization.json.JsonElement$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.ViewLayer: void setCameraDistancePx(float)
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.CreateCommentRequestDto)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.AndroidComposeView getOwnerView()
+androidx.core.view.ViewCompat$Api16Impl: boolean hasOverlappingRendering(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: BookmarkToggleResponseDto$$serializer()
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.core.view.DisplayCutoutCompat$Api30Impl: android.view.DisplayCutout createDisplayCutout(android.graphics.Insets,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Rect,android.graphics.Insets)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.TrendingChefsResponseDto)
+com.justcook.data.remote.dto.response.UserDto$$serializer: UserDto$$serializer()
+androidx.core.view.ViewCompat$Api21Impl: android.content.res.ColorStateList getBackgroundTintList(android.view.View)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: android.graphics.Matrix getLocalMatrix()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.SessionResponseDto)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
+kotlin.collections.AbstractMutableList: AbstractMutableList()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.text.android.StaticLayoutFactory26: void setJustificationMode(android.text.StaticLayout$Builder,int)
+com.justcook.core.datastore.ThemeMode: com.justcook.core.datastore.ThemeMode[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: androidx.core.graphics.PathParser$PathDataNode[] getPathData()
+androidx.activity.EdgeToEdgeApi29: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: BookmarksResponseDto$$serializer()
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.autofill.AutofillCallback: void unregister(androidx.compose.ui.autofill.AndroidAutofill)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
+androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.text.platform.extensions.LocaleListHelperMethods: java.lang.Object localeSpan(androidx.compose.ui.text.intl.LocaleList)
+androidx.core.graphics.drawable.DrawableCompat$Api23Impl: int getLayoutDirection(android.graphics.drawable.Drawable)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setBoundsInWindow(android.view.accessibility.AccessibilityNodeInfo,android.graphics.Rect)
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: ForgotPasswordRequestDto$$serializer()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat getChild(android.view.accessibility.AccessibilityNodeInfo,int,int)
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize valueOf(java.lang.String)
+kotlinx.serialization.json.internal.WriteMode: kotlinx.serialization.json.internal.WriteMode valueOf(java.lang.String)
+androidx.compose.ui.autofill.AutofillApi23Helper: int addChildCount(android.view.ViewStructure,int)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.core.view.DisplayCutoutCompat$Api28Impl: java.util.List getBoundingRects(android.view.DisplayCutout)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPath: void setPathData(androidx.core.graphics.PathParser$PathDataNode[])
+androidx.core.view.ViewCompat$Api28Impl: void setScreenReaderFocusable(android.view.View,boolean)
+androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: GoogleCallbackRequestDto$$serializer()
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: com.justcook.data.remote.dto.response.FollowingResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.navigation.compose.ComposeNavigator: ComposeNavigator()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui_release()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: boolean canApplyTheme(android.graphics.drawable.Drawable)
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType[] values()
+androidx.core.view.ViewCompat$Api20Impl: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder[] values()
+androidx.compose.ui.text.input.CursorAnchorInfoApi34Helper: android.view.inputmethod.CursorAnchorInfo$Builder addVisibleLineBounds(android.view.inputmethod.CursorAnchorInfo$Builder,androidx.compose.ui.text.TextLayoutResult,androidx.compose.ui.geometry.Rect)
+androidx.core.view.ViewCompat$Api16Impl: int getWindowSystemUiVisibility(android.view.View)
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: IngredientDto$$serializer()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: com.justcook.data.remote.dto.response.VoteResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.graphics.TypefaceCompatUtil$Api19Impl: android.os.ParcelFileDescriptor openFileDescriptor(android.content.ContentResolver,android.net.Uri,java.lang.String,android.os.CancellationSignal)
+androidx.core.view.ViewCompat$Api16Impl: void removeOnGlobalLayoutListener(android.view.ViewTreeObserver,android.view.ViewTreeObserver$OnGlobalLayoutListener)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: boolean isNestedScrollingEnabled(android.view.View)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: com.justcook.data.remote.dto.response.SessionDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillHints(android.view.ViewStructure,java.lang.String[])
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedFling(android.view.View,float,float,boolean)
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.CreateRecipeRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object vote(com.justcook.data.remote.dto.request.VoteRequestDto,kotlin.coroutines.Continuation)
+androidx.versionedparcelable.CustomVersionedParcelable: CustomVersionedParcelable()
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.graphics.BlendModeColorFilterHelper: android.graphics.BlendModeColorFilter BlendModeColorFilter-xETnrds(long,int)
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState[] values()
+androidx.core.text.ICUCompat$Api24Impl: android.icu.util.ULocale forLocale(java.util.Locale)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void setTint(android.graphics.drawable.Drawable,int)
+androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+com.justcook.data.remote.dto.response.TrendingResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.ViewCompat$Api28Impl: void setAccessibilityHeading(android.view.View,boolean)
+com.justcook.data.remote.dto.response.FollowingResponseDto$$serializer: FollowingResponseDto$$serializer()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api34Impl: void setQueryFromAppProcessEnabled(android.view.accessibility.AccessibilityNodeInfo,android.view.View,boolean)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
+androidx.lifecycle.ProcessLifecycleOwner$Api29Impl: void registerActivityLifecycleCallbacks(android.app.Activity,android.app.Application$ActivityLifecycleCallbacks)
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.graphics.drawable.IconCompat$Api23Impl: android.graphics.drawable.Icon toIcon(androidx.core.graphics.drawable.IconCompat,android.content.Context)
+androidx.core.content.ContextCompat$Api21Impl: java.io.File getNoBackupFilesDir(android.content.Context)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: com.justcook.data.remote.dto.response.CommentsResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.ViewCompat$Api21Impl: android.graphics.PorterDuff$Mode getBackgroundTintMode(android.view.View)
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: ChefStatsDto$$serializer()
+com.justcook.data.remote.dto.response.RecipeDetailResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.RecipeDetailResponseDto)
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: com.justcook.data.remote.dto.response.CommentRecipeDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.foundation.layout.SizeMode: androidx.compose.foundation.layout.SizeMode[] values()
+androidx.core.graphics.drawable.DrawableCompat$Api19Impl: int getAlpha(android.graphics.drawable.Drawable)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.core.view.ViewCompat$Api21Impl: float getElevation(android.view.View)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: CommentsResponseDto$$serializer()
+kotlinx.coroutines.android.AndroidExceptionPreHandler: void handleException(kotlin.coroutines.CoroutineContext,java.lang.Throwable)
+androidx.compose.ui.platform.ViewLayer: long getLayerId()
+androidx.core.view.ViewCompat$Api21Impl: boolean isImportantForAccessibility(android.view.View)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void setTintMode(android.graphics.drawable.Drawable,android.graphics.PorterDuff$Mode)
+com.justcook.data.remote.dto.response.StepDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.autofill.AutofillApi26Helper: java.lang.CharSequence textValue(android.view.autofill.AutofillValue)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.core.view.ViewCompat$Api21Impl: boolean startNestedScroll(android.view.View,int)
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumHeight(android.view.View)
+androidx.compose.ui.graphics.TileModeVerificationHelper: android.graphics.Shader$TileMode getFrameworkTileModeDecal()
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.CreateCommentResponseDto)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+coil.request.CachePolicy: coil.request.CachePolicy valueOf(java.lang.String)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke[] values()
+androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+com.justcook.data.remote.dto.request.MagicLinkRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getScaleY()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.core.view.ViewCompat$Api29Impl: android.view.contentcapture.ContentCaptureSession getContentCaptureSession(android.view.View)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.platform.ViewLayer: androidx.compose.ui.platform.DrawChildContainer getContainer()
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.platform.coreshims.ViewStructureCompat$Api23Impl: void setContentDescription(android.view.ViewStructure,java.lang.CharSequence)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api16Impl: int getMinimumWidth(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void applyTheme(android.graphics.drawable.Drawable,android.content.res.Resources$Theme)
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: int getType(java.lang.Object)
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: com.justcook.data.remote.dto.response.DiscoverResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+kotlinx.coroutines.android.AndroidDispatcherFactory: int getLoadPriority()
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: CreateCommentRequestDto$$serializer()
+androidx.compose.ui.platform.TextToolbarHelperMethods: android.view.ActionMode startActionMode(android.view.View,android.view.ActionMode$Callback,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: AuthResponseDto$$serializer()
+com.justcook.domain.model.Difficulty: com.justcook.domain.model.Difficulty valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.StepDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.StepDto)
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setStrokeAlpha(float)
+androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object deleteComment(com.justcook.data.remote.dto.request.DeleteCommentRequestDto,kotlin.coroutines.Continuation)
+androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+com.justcook.data.remote.dto.response.SessionResponseDto$$serializer: com.justcook.data.remote.dto.response.SessionResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+coil.decode.ExifOrientationPolicy: coil.decode.ExifOrientationPolicy valueOf(java.lang.String)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+androidx.compose.ui.autofill.AutofillApi26Helper: boolean isDate(android.view.autofill.AutofillValue)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+com.justcook.data.remote.dto.response.CommentRecipeDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.text.android.StaticLayoutFactoryDefault: android.text.StaticLayout create(androidx.compose.ui.text.android.StaticLayoutParams)
+androidx.compose.material.ripple.UnprojectedRipple$MRadiusHelper: void setRadius(android.graphics.drawable.RippleDrawable,int)
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.DeleteCommentResponseDto)
+androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
+androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: CreateRecipeResponseDto$$serializer()
+androidx.compose.ui.platform.ViewLayer: long getOwnerViewId()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
+androidx.core.app.RemoteActionCompat: RemoteActionCompat()
+com.justcook.data.remote.dto.response.BookmarksResponseDto$$serializer: com.justcook.data.remote.dto.response.BookmarksResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
+androidx.compose.ui.graphics.Api26Bitmap: androidx.compose.ui.graphics.colorspace.ColorSpace composeColorSpace$ui_graphics_release(android.graphics.Bitmap)
+com.justcook.data.remote.api.AuthApiService: java.lang.Object signInWithEmail(com.justcook.data.remote.dto.request.EmailSignInRequestDto,kotlin.coroutines.Continuation)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+kotlinx.serialization.json.JsonObject$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.platform.DrawChildContainer: int getChildCount()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+com.justcook.data.remote.dto.response.ChefSummaryDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setFillAlpha(float)
+com.justcook.data.remote.dto.request.BookmarkRequestDto$$serializer: BookmarkRequestDto$$serializer()
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+coil.decode.DataSource: coil.decode.DataSource valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.StepDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+com.justcook.data.remote.dto.response.AuthResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.VoteRequestDto)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setTranslateY(float)
+androidx.core.util.ObjectsCompat$Api19Impl: int hash(java.lang.Object[])
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.DeleteCommentResponseDto$$serializer: com.justcook.data.remote.dto.response.DeleteCommentResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+androidx.core.view.ViewCompat$Api30Impl: void setStateDescription(android.view.View,java.lang.CharSequence)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: int getFillColor()
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: ChefSummaryDto$$serializer()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.VoteResponseDto$$serializer: VoteResponseDto$$serializer()
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
+kotlinx.serialization.json.JsonArray$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.lifecycle.ReportFragment: ReportFragment()
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: com.justcook.data.remote.dto.response.CreateRecipeResponseDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineAmbientShadowColor(android.view.View,int)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+androidx.compose.foundation.Api31Impl: float getDistance(android.widget.EdgeEffect)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api19Impl: androidx.core.view.accessibility.AccessibilityNodeInfoCompat$CollectionItemInfoCompat createCollectionItemInfo(int,int,int,int,boolean)
+androidx.compose.ui.autofill.AutofillApi26Helper: void setAutofillId(android.view.ViewStructure,android.view.autofill.AutofillId,int)
+androidx.compose.ui.text.android.BoringLayoutFactoryDefault: android.text.BoringLayout create(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout$Alignment,float,float,android.text.BoringLayout$Metrics,boolean,android.text.TextUtils$TruncateAt,int)
+androidx.core.view.WindowCompat$Api16Impl: void setDecorFitsSystemWindows(android.view.Window,boolean)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: java.lang.String getGroupName()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VPathRenderer: void setAlpha(float)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
+androidx.compose.ui.platform.ViewLayerVerificationHelper28: void setOutlineSpotShadowColor(android.view.View,int)
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$Companion: kotlinx.serialization.KSerializer serializer()
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.DiscoverResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.CreateRecipeResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VFullPath: void setTrimPathEnd(float)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewAppeared(android.view.contentcapture.ContentCaptureSession,android.view.ViewStructure)
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object getDiscoverRecipes(java.lang.String,kotlin.coroutines.Continuation)
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.ViewCompat$Api21Impl: boolean hasNestedScrollingParent(android.view.View)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getPivotY()
+androidx.activity.ComponentActivity: void setContentView(android.view.View)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: float getTranslateY()
+com.justcook.data.remote.dto.response.TrendingChefsResponseDto$$serializer: TrendingChefsResponseDto$$serializer()
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: RecipeListResponseDto$$serializer()
+androidx.room.Index$Order: androidx.room.Index$Order[] values()
+com.justcook.data.remote.dto.response.IngredientDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.response.CommentsResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: VoteRequestDto$$serializer()
+com.justcook.data.remote.dto.response.TrendingResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+androidx.core.os.BundleApi21ImplKt: void putSize(android.os.Bundle,java.lang.String,android.util.Size)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+com.justcook.data.remote.dto.response.ChefStatsDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
+androidx.core.view.ViewCompat$Api21Impl: boolean dispatchNestedPreFling(android.view.View,float,float)
+androidx.core.graphics.drawable.DrawableCompat$Api23Impl: boolean setLayoutDirection(android.graphics.drawable.Drawable,int)
+androidx.compose.animation.core.RepeatMode: androidx.compose.animation.core.RepeatMode[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+okhttp3.logging.HttpLoggingInterceptor$Level: okhttp3.logging.HttpLoggingInterceptor$Level[] values()
+com.justcook.data.remote.dto.response.FollowingResponseDto$Companion: kotlinx.serialization.KSerializer serializer()
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+androidx.compose.ui.window.PopupLayout: int getDisplayHeight()
+com.justcook.data.remote.dto.response.RecipeDto$$serializer: RecipeDto$$serializer()
+com.justcook.data.remote.dto.request.StepInputDto$$serializer: StepInputDto$$serializer()
+androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$2(androidx.compose.material.ripple.RippleHostView)
+androidx.compose.ui.text.android.StaticLayoutFactory33: void setLineBreakConfig(android.text.StaticLayout$Builder,int,int)
+com.justcook.data.remote.dto.response.CommentRecipeDto$$serializer: CommentRecipeDto$$serializer()
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+com.justcook.data.remote.dto.response.RecipeListResponseDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.response.RecipeListResponseDto)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
+androidx.room.MultiInstanceInvalidationService: MultiInstanceInvalidationService()
+androidx.core.view.ViewCompat$Api16Impl: void requestFitSystemWindows(android.view.View)
+com.justcook.data.remote.dto.request.UpdateRecipeRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.UpdateRecipeRequestDto)
+androidx.core.graphics.drawable.IconCompat$Api28Impl: android.net.Uri getUri(java.lang.Object)
+androidx.compose.ui.window.PopupLayout: void setIsFocusable(boolean)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VectorDrawableDelegateState: int getChangingConfigurations()
+androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
+androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.activity.EdgeToEdgeApi26: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.core.view.ViewCompat$Api19Impl: int getAccessibilityLiveRegion(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
+com.justcook.data.remote.dto.request.DeleteCommentRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.DeleteCommentRequestDto)
+com.justcook.data.remote.dto.request.GoogleCallbackRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,com.justcook.data.remote.dto.request.GoogleCallbackRequestDto)
+com.justcook.data.remote.dto.response.CreateCommentResponseDto$$serializer: CreateCommentResponseDto$$serializer()
+com.justcook.data.remote.dto.response.SessionDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.core.os.TraceCompat$Api18Impl: void beginSection(java.lang.String)
+com.justcook.data.remote.dto.request.CreateCommentRequestDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase valueOf(java.lang.String)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: boolean isTextSelectable(android.view.accessibility.AccessibilityNodeInfo)
+com.justcook.data.remote.dto.response.StepDto$$serializer: kotlinx.serialization.KSerializer[] childSerializers()
+com.justcook.data.remote.dto.response.ChefSummaryDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui_release$annotations()
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
+com.justcook.data.remote.dto.request.ForgotPasswordRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.vectordrawable.graphics.drawable.VectorDrawableCompat$VGroup: void setRotation(float)
+androidx.core.view.accessibility.AccessibilityNodeInfoCompat$Api33Impl: java.lang.String getUniqueId(android.view.accessibility.AccessibilityNodeInfo)
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api34Impl: void notifyViewsAppeared(android.view.contentcapture.ContentCaptureSession,java.util.List)
+androidx.compose.foundation.text.selection.HandleReferencePoint: androidx.compose.foundation.text.selection.HandleReferencePoint[] values()
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase[] values()
+androidx.compose.ui.platform.coreshims.ContentCaptureSessionCompat$Api29Impl: void notifyViewsDisappeared(android.view.contentcapture.ContentCaptureSession,android.view.autofill.AutofillId,long[])
+com.justcook.data.remote.dto.response.BookmarkToggleResponseDto$$serializer: java.lang.Object deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.ViewCompat$Api21Impl: void setTransitionName(android.view.View,java.lang.String)
+com.justcook.data.remote.dto.response.CommentDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
+androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat$TranslateStatus valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+com.justcook.data.remote.dto.request.IngredientInputDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+androidx.core.view.ViewCompat$Api16Impl: void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+com.justcook.data.remote.dto.response.ChefProfileResponseDto$$serializer: kotlinx.serialization.descriptors.SerialDescriptor getDescriptor()
+com.justcook.data.remote.dto.request.VoteRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+androidx.compose.ui.graphics.CanvasZHelper: void enableZ(android.graphics.Canvas,boolean)
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection[] values()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+com.justcook.data.remote.dto.request.EmailSignUpRequestDto$$serializer: com.justcook.data.remote.dto.request.EmailSignUpRequestDto deserialize(kotlinx.serialization.encoding.Decoder)
+androidx.core.view.ViewCompat$Api21Impl: void stopNestedScroll(android.view.View)
+androidx.core.graphics.drawable.DrawableCompat$Api21Impl: void setTintList(android.graphics.drawable.Drawable,android.content.res.ColorStateList)
+androidx.compose.ui.platform.RenderNodeVerificationHelper24: void discardDisplayList(android.view.RenderNode)
+com.justcook.domain.model.ProfileTier: com.justcook.domain.model.ProfileTier valueOf(java.lang.String)
+com.justcook.data.remote.dto.request.EmailSignInRequestDto$$serializer: void serialize(kotlinx.serialization.encoding.Encoder,java.lang.Object)
+com.justcook.data.remote.dto.request.FollowRequestDto$$serializer: kotlinx.serialization.KSerializer[] typeParametersSerializers()
+com.justcook.data.remote.api.RecipeApiService: java.lang.Object unfollowUser(java.lang.String,kotlin.coroutines.Continuation)

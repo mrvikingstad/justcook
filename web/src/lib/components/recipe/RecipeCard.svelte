@@ -68,7 +68,7 @@
 <article class="card" class:vertical={variant === 'vertical'}>
 	{#if image}
 		<a href="/recipes/{slug}" class="image-link" tabindex="-1">
-			<img src={image} alt={title} class="image" />
+			<img src={image} alt={title} class="image" loading="lazy" decoding="async" />
 		</a>
 	{/if}
 

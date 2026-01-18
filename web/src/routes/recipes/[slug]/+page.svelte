@@ -5,6 +5,8 @@
 	import ServingsAdjuster from '$lib/components/recipe/ServingsAdjuster.svelte';
 	import IngredientList from '$lib/components/recipe/IngredientList.svelte';
 	import StepList from '$lib/components/recipe/StepList.svelte';
+	import TipsList from '$lib/components/recipe/TipsList.svelte';
+	import EquipmentList from '$lib/components/recipe/EquipmentList.svelte';
 	import VoteButtons from '$lib/components/recipe/VoteButtons.svelte';
 	import { bookmarks, toggleBookmark } from '$lib/stores/bookmarks';
 
@@ -157,10 +159,24 @@
 		<IngredientList ingredients={recipe.ingredients} {multiplier} />
 	</section>
 
+	{#if recipe.equipment.length > 0}
+		<section class="equipment-section">
+			<h2>Equipment Needed</h2>
+			<EquipmentList equipment={recipe.equipment} />
+		</section>
+	{/if}
+
 	<section class="steps-section">
 		<h2>Instructions</h2>
 		<StepList steps={recipe.steps} />
 	</section>
+
+	{#if recipe.tips.length > 0}
+		<section class="tips-section">
+			<h2>Tips</h2>
+			<TipsList tips={recipe.tips} />
+		</section>
+	{/if}
 </article>
 
 <style>
@@ -337,7 +353,9 @@
 	}
 
 	.ingredients-section,
-	.steps-section {
+	.equipment-section,
+	.steps-section,
+	.tips-section {
 		margin-bottom: 3rem;
 	}
 
@@ -365,7 +383,9 @@
 		color: var(--color-text-muted);
 	}
 
-	.steps-section h2 {
+	.steps-section h2,
+	.equipment-section h2,
+	.tips-section h2 {
 		margin-bottom: 1rem;
 	}
 
@@ -430,7 +450,9 @@
 		}
 
 		.ingredients-section,
-		.steps-section {
+		.equipment-section,
+		.steps-section,
+		.tips-section {
 			margin-bottom: 2rem;
 		}
 

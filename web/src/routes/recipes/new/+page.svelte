@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { Plus, Trash2, GripVertical, Image, ChefHat, ChevronDown } from 'lucide-svelte';
+	import { Plus, Trash2, GripVertical, Image, ChefHat, ChevronDown, Lightbulb, CookingPot, Camera, FileText, Globe, Clock, ShoppingBasket, ListOrdered } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 	import { dndzone } from 'svelte-dnd-action';
 	import IngredientSearch from '$lib/components/forms/IngredientSearch.svelte';
+	import EquipmentSearch from '$lib/components/forms/EquipmentSearch.svelte';
 	import Select from '$lib/components/ui/Select.svelte';
 	import { portal } from '$lib/actions/portal';
 	import { cuisines } from '$lib/data/cuisines';
@@ -51,6 +52,18 @@
 		instruction: string;
 	}
 
+	interface Tip {
+		id: string;
+		content: string;
+	}
+
+	interface EquipmentItem {
+		id: string;
+		name: string;
+		equipmentKey: string;
+		notes: string;
+	}
+
 	let ingredients = $state<Ingredient[]>([
 		{ id: crypto.randomUUID(), name: '', ingredientKey: '', amount: '', unit: '', notes: '' }
 	]);
@@ -58,6 +71,10 @@
 	let steps = $state<Step[]>([
 		{ id: crypto.randomUUID(), instruction: '' }
 	]);
+
+	let tips = $state<Tip[]>([]);
+
+	let equipmentItems = $state<EquipmentItem[]>([]);
 
 	const commonUnits = ['g', 'kg', 'ml', 'L', 'tsp', 'tbsp', 'cup', 'oz', 'lb', 'piece', 'clove', 'pinch'];
 
@@ -345,6 +362,42 @@
 		}
 	}
 
+	// Tips handlers
+	function handleTipsDndConsider(e: CustomEvent<{ items: Tip[] }>) {
+		tips = e.detail.items;
+	}
+
+	function handleTipsDndFinalize(e: CustomEvent<{ items: Tip[] }>) {
+		tips = e.detail.items;
+	}
+
+	function addTip() {
+		if (tips.length < 5) {
+			tips = [...tips, { id: crypto.randomUUID(), content: '' }];
+		}
+	}
+
+	function removeTip(id: string) {
+		tips = tips.filter((t) => t.id !== id);
+	}
+
+	// Equipment handlers
+	function handleEquipmentDndConsider(e: CustomEvent<{ items: EquipmentItem[] }>) {
+		equipmentItems = e.detail.items;
+	}
+
+	function handleEquipmentDndFinalize(e: CustomEvent<{ items: EquipmentItem[] }>) {
+		equipmentItems = e.detail.items;
+	}
+
+	function addEquipment() {
+		equipmentItems = [...equipmentItems, { id: crypto.randomUUID(), name: '', equipmentKey: '', notes: '' }];
+	}
+
+	function removeEquipment(id: string) {
+		equipmentItems = equipmentItems.filter((e) => e.id !== id);
+	}
+
 	function handlePhotoChange(e: Event) {
 		const input = e.target as HTMLInputElement;
 		const file = input.files?.[0];
@@ -370,11 +423,13 @@
 		isSubmitting = true;
 		error = '';
 
-		// Get valid ingredients and steps
+		// Get valid ingredients, steps, tips, and equipment
 		const validIngredients = ingredients.filter((i) =>
 			i.ingredientKey && String(i.amount).trim() && parseFloat(String(i.amount)) > 0 && i.unit.trim()
 		);
 		const validSteps = steps.filter((s) => s.instruction.trim());
+		const validTips = tips.filter((t) => t.content.trim());
+		const validEquipment = equipmentItems.filter((e) => e.name.trim());
 
 		try {
 			// Upload photo first if one was selected
@@ -424,6 +479,14 @@
 					steps: validSteps.map(s => ({
 						...s,
 						instruction: s.instruction.trim()
+					})),
+					tips: validTips.map(t => ({
+						content: t.content.trim()
+					})),
+					equipment: validEquipment.map(e => ({
+						name: e.name.trim(),
+						equipmentKey: e.equipmentKey || null,
+						notes: e.notes.trim() || null
 					}))
 				})
 			});
@@ -500,7 +563,10 @@
 		<!-- Photo -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Photo</h2>
+				<div class="section-title-row">
+					<Camera size={18} />
+					<h2>Photo</h2>
+				</div>
 				<p class="hint">Show off your own cooking. Landscape orientation works best.</p>
 			</div>
 
@@ -525,7 +591,10 @@
 		<!-- Basics -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Basics</h2>
+				<div class="section-title-row">
+					<FileText size={18} />
+					<h2>Basics</h2>
+				</div>
 			</div>
 
 			<div class="field">
@@ -675,7 +744,10 @@
 		<!-- Language -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Language</h2>
+				<div class="section-title-row">
+					<Globe size={18} />
+					<h2>Language</h2>
+				</div>
 			</div>
 
 			<div class="field">
@@ -775,7 +847,10 @@
 		<!-- Time & Difficulty -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Time & Difficulty</h2>
+				<div class="section-title-row">
+					<Clock size={18} />
+					<h2>Time & Difficulty</h2>
+				</div>
 				<p class="hint">Estimates are fine. Prep is everything before cooking. Cook is time with heat.</p>
 			</div>
 
@@ -832,7 +907,10 @@
 		<!-- Ingredients -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Ingredients</h2>
+				<div class="section-title-row">
+					<ShoppingBasket size={18} />
+					<h2>Ingredients</h2>
+				</div>
 				<p class="hint">Select ingredients from our database. Amount and unit are required. Drag to reorder.</p>
 			</div>
 
@@ -845,27 +923,29 @@
 				{#each ingredients as ingredient (ingredient.id)}
 					<div class="ingredient-row">
 						<span class="grip"><GripVertical size={16} /></span>
-						<input
-							type="number"
-							class="amount"
-							bind:value={ingredient.amount}
-							placeholder="200"
-							min="0.01"
-							step="any"
-						/>
-						<button
-							type="button"
-							class="unit-trigger"
-							onclick={() => toggleUnitDropdown(ingredient.id)}
-							bind:this={unitTriggerEls[ingredient.id]}
-							aria-haspopup="listbox"
-							aria-expanded={unitDropdownOpenId === ingredient.id}
-						>
-							<span class="unit-value" class:placeholder={!ingredient.unit}>
-								{ingredient.unit || 'Unit'}
-							</span>
-							<ChevronDown size={14} class="unit-chevron {unitDropdownOpenId === ingredient.id ? 'open' : ''}" />
-						</button>
+						<div class="quantity-group">
+							<input
+								type="number"
+								class="amount"
+								bind:value={ingredient.amount}
+								placeholder="200"
+								min="0.01"
+								step="any"
+							/>
+							<button
+								type="button"
+								class="unit-trigger"
+								onclick={() => toggleUnitDropdown(ingredient.id)}
+								bind:this={unitTriggerEls[ingredient.id]}
+								aria-haspopup="listbox"
+								aria-expanded={unitDropdownOpenId === ingredient.id}
+							>
+								<span class="unit-value" class:placeholder={!ingredient.unit}>
+									{ingredient.unit || 'Unit'}
+								</span>
+								<ChevronDown size={14} class="unit-chevron {unitDropdownOpenId === ingredient.id ? 'open' : ''}" />
+							</button>
+						</div>
 						<IngredientSearch
 							bind:value={ingredient.name}
 							bind:ingredientKey={ingredient.ingredientKey}
@@ -938,10 +1018,65 @@
 			</button>
 		</section>
 
+		<!-- Equipment -->
+		<section class="section">
+			<div class="section-header">
+				<div class="section-title-row">
+					<CookingPot size={18} />
+					<h2>Equipment</h2>
+					<span class="optional-badge">Optional</span>
+				</div>
+				<p class="hint">List specialty equipment needed. Skip common items like pots, pans, and knives.</p>
+			</div>
+
+			{#if equipmentItems.length > 0}
+				<div
+					class="equipment-list"
+					use:dndzone={{ items: equipmentItems, flipDurationMs, dropTargetStyle: {} }}
+					onconsider={handleEquipmentDndConsider}
+					onfinalize={handleEquipmentDndFinalize}
+				>
+					{#each equipmentItems as item (item.id)}
+						<div class="equipment-row">
+							<span class="grip"><GripVertical size={16} /></span>
+							<EquipmentSearch
+								bind:value={item.name}
+								bind:equipmentKey={item.equipmentKey}
+								placeholder="Search or add equipment..."
+							/>
+							<input
+								type="text"
+								class="equipment-notes"
+								bind:value={item.notes}
+								placeholder="optional notes"
+								maxlength="200"
+							/>
+							<button
+								type="button"
+								class="remove"
+								onclick={() => removeEquipment(item.id)}
+								aria-label="Remove equipment"
+							>
+								<Trash2 size={16} />
+							</button>
+						</div>
+					{/each}
+				</div>
+			{/if}
+
+			<button type="button" class="add-button" onclick={addEquipment}>
+				<Plus size={16} />
+				Add equipment
+			</button>
+		</section>
+
 		<!-- Steps -->
 		<section class="section">
 			<div class="section-header">
-				<h2>Instructions</h2>
+				<div class="section-title-row">
+					<ListOrdered size={18} />
+					<h2>Instructions</h2>
+				</div>
 				<p class="hint">One action per step. Be clear and specific. Assume the reader is a beginner.</p>
 			</div>
 
@@ -970,6 +1105,52 @@
 			<button type="button" class="add-button" onclick={addStep}>
 				<Plus size={16} />
 				Add step
+			</button>
+		</section>
+
+		<!-- Tips -->
+		<section class="section">
+			<div class="section-header">
+				<div class="section-title-row">
+					<Lightbulb size={18} />
+					<h2>Tips</h2>
+					<span class="optional-badge">Optional</span>
+				</div>
+				<p class="hint">Share helpful advice for making this recipe. Up to 5 tips.</p>
+			</div>
+
+			{#if tips.length > 0}
+				<div
+					class="tips-list"
+					use:dndzone={{ items: tips, flipDurationMs, dropTargetStyle: {} }}
+					onconsider={handleTipsDndConsider}
+					onfinalize={handleTipsDndFinalize}
+				>
+					{#each tips as tip (tip.id)}
+						<div class="tip-row">
+							<span class="grip"><GripVertical size={16} /></span>
+							<textarea
+								bind:value={tip.content}
+								placeholder="e.g. Let the dough rest for 10 minutes before rolling for better texture."
+								rows="2"
+								maxlength="500"
+							></textarea>
+							<button
+								type="button"
+								class="remove"
+								onclick={() => removeTip(tip.id)}
+								aria-label="Remove tip"
+							>
+								<Trash2 size={16} />
+							</button>
+						</div>
+					{/each}
+				</div>
+			{/if}
+
+			<button type="button" class="add-button" onclick={addTip} disabled={tips.length >= 5}>
+				<Plus size={16} />
+				{tips.length >= 5 ? 'Maximum 5 tips' : 'Add tip'}
 			</button>
 		</section>
 
@@ -1478,9 +1659,28 @@
 		color: var(--color-text-muted);
 	}
 
-	.ingredient-row .amount {
-		width: 60px;
+	.quantity-group {
+		display: flex;
+		border: 1px solid var(--color-border);
+		border-radius: 4px;
+		overflow: hidden;
 		flex-shrink: 0;
+	}
+
+	.quantity-group .amount {
+		width: 60px;
+		border: none;
+		border-right: 1px solid var(--color-border);
+		border-radius: 0;
+	}
+
+	.quantity-group .amount:focus {
+		border-color: var(--color-border);
+	}
+
+	.quantity-group .unit-trigger {
+		border: none;
+		border-radius: 0;
 	}
 
 	.ingredient-row .notes {
@@ -1581,6 +1781,170 @@
 	}
 
 	.step-row textarea::placeholder {
+		color: var(--color-text-muted);
+	}
+
+	/* Section title row with icon */
+	.section-title-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.section-title-row h2 {
+		margin: 0;
+	}
+
+	.optional-badge {
+		font-size: 0.75rem;
+		font-weight: 500;
+		padding: 0.125rem 0.5rem;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: 999px;
+		color: var(--color-text-muted);
+	}
+
+	/* Tips */
+	.tips-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.tip-row {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.5rem;
+		background: var(--color-surface);
+		padding: 0.25rem;
+		border-radius: 4px;
+	}
+
+	.tip-row .grip {
+		color: var(--color-border);
+		cursor: grab;
+		flex-shrink: 0;
+		padding: 0.5rem 0.25rem;
+	}
+
+	.tip-row .grip:active {
+		cursor: grabbing;
+	}
+
+	.tip-row textarea {
+		flex: 1;
+		padding: 0.5rem 0.625rem;
+		background: var(--color-bg);
+		border: 1px solid var(--color-border);
+		border-radius: 4px;
+		font-family: inherit;
+		font-size: 0.875rem;
+		color: var(--color-text);
+		resize: vertical;
+		min-height: 50px;
+	}
+
+	.tip-row textarea:focus {
+		outline: none;
+		border-color: var(--color-text);
+	}
+
+	.tip-row textarea::placeholder {
+		color: var(--color-text-muted);
+	}
+
+	.tip-row .remove {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5rem;
+		background: none;
+		border: none;
+		color: var(--color-text-muted);
+		cursor: pointer;
+		border-radius: 4px;
+	}
+
+	.tip-row .remove:hover {
+		color: #b91c1c;
+		background: rgba(185, 28, 28, 0.1);
+	}
+
+	/* Equipment */
+	.equipment-list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.equipment-row {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: var(--color-surface);
+		padding: 0.25rem;
+		border-radius: 4px;
+	}
+
+	.equipment-row .grip {
+		color: var(--color-border);
+		cursor: grab;
+		flex-shrink: 0;
+		padding: 0.25rem;
+	}
+
+	.equipment-row .grip:active {
+		cursor: grabbing;
+	}
+
+	.equipment-notes {
+		flex: 1;
+		min-width: 80px;
+		padding: 0.5rem 0.625rem;
+		background: var(--color-bg);
+		border: 1px solid var(--color-border);
+		border-radius: 4px;
+		font-family: inherit;
+		font-size: 0.875rem;
+		color: var(--color-text);
+	}
+
+	.equipment-notes:focus {
+		outline: none;
+		border-color: var(--color-text);
+	}
+
+	.equipment-notes::placeholder {
+		color: var(--color-text-muted);
+	}
+
+	.equipment-row .remove {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.5rem;
+		background: none;
+		border: none;
+		color: var(--color-text-muted);
+		cursor: pointer;
+		border-radius: 4px;
+	}
+
+	.equipment-row .remove:hover {
+		color: #b91c1c;
+		background: rgba(185, 28, 28, 0.1);
+	}
+
+	.add-button:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+
+	.add-button:disabled:hover {
+		border-color: var(--color-border);
 		color: var(--color-text-muted);
 	}
 

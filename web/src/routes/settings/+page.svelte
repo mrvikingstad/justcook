@@ -27,8 +27,22 @@
 	// Delete account state
 	let showDeleteConfirm = $state(false);
 	let deleteConfirmation = $state('');
+	let deletePassword = $state('');
+	let hasPasswordAccount = $state<boolean | null>(null); // null = loading
 	let isDeleting = $state(false);
 	let deleteError = $state('');
+
+	// Check if user has password account on mount
+	$effect(() => {
+		fetch('/api/account')
+			.then((res) => res.json())
+			.then((data) => {
+				hasPasswordAccount = data.hasPassword ?? false;
+			})
+			.catch(() => {
+				hasPasswordAccount = false;
+			});
+	});
 
 	// Form state - initialize from existing profile
 	let fullName = $state(data.profile?.fullName ?? data.user.name ?? '');
@@ -333,9 +347,17 @@
 
 	// Account deletion handler
 	async function handleDeleteAccount() {
-		if (deleteConfirmation !== 'DELETE') {
-			deleteError = 'Please type DELETE to confirm';
-			return;
+		// Validate based on account type
+		if (hasPasswordAccount) {
+			if (!deletePassword) {
+				deleteError = 'Please enter your password to confirm';
+				return;
+			}
+		} else {
+			if (deleteConfirmation !== 'DELETE') {
+				deleteError = 'Please type DELETE to confirm';
+				return;
+			}
 		}
 
 		isDeleting = true;
@@ -345,7 +367,11 @@
 			const response = await fetch('/api/account', {
 				method: 'DELETE',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ confirmation: deleteConfirmation })
+				body: JSON.stringify(
+					hasPasswordAccount
+						? { password: deletePassword }
+						: { confirmation: deleteConfirmation }
+				)
 			});
 
 			const result = await response.json();
@@ -819,15 +845,31 @@
 						<li>All your comments and votes</li>
 						<li>Your followers and following</li>
 					</ul>
-					<p class="delete-instruction">
-						Type <strong>DELETE</strong> to confirm:
-					</p>
-					<input
-						type="text"
-						bind:value={deleteConfirmation}
-						placeholder="Type DELETE"
-						disabled={isDeleting}
-					/>
+
+					{#if hasPasswordAccount === null}
+						<p class="account-hint">Loading...</p>
+					{:else if hasPasswordAccount}
+						<p class="delete-instruction">
+							Enter your <strong>password</strong> to confirm:
+						</p>
+						<input
+							type="password"
+							bind:value={deletePassword}
+							placeholder="Enter your password"
+							disabled={isDeleting}
+						/>
+					{:else}
+						<p class="delete-instruction">
+							Type <strong>DELETE</strong> to confirm:
+						</p>
+						<input
+							type="text"
+							bind:value={deleteConfirmation}
+							placeholder="Type DELETE"
+							disabled={isDeleting}
+						/>
+					{/if}
+
 					{#if deleteError}
 						<p class="account-error">{deleteError}</p>
 					{/if}
@@ -838,6 +880,7 @@
 							onclick={() => {
 								showDeleteConfirm = false;
 								deleteConfirmation = '';
+								deletePassword = '';
 								deleteError = '';
 							}}
 							disabled={isDeleting}
@@ -848,7 +891,7 @@
 							type="button"
 							class="danger-btn"
 							onclick={handleDeleteAccount}
-							disabled={isDeleting || deleteConfirmation !== 'DELETE'}
+							disabled={isDeleting || hasPasswordAccount === null || (hasPasswordAccount ? !deletePassword : deleteConfirmation !== 'DELETE')}
 						>
 							{isDeleting ? 'Deleting...' : 'Permanently delete'}
 						</button>

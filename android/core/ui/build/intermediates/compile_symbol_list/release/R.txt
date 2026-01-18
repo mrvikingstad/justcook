@@ -1,0 +1,2 @@
+int drawable ic_chef_hat 0x0
+int font arima_variablefont_wght 0x0

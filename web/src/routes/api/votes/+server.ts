@@ -3,12 +3,46 @@ import type { RequestHandler } from './$types';
 import { db } from '$lib/server/db';
 import { votes, recipes } from '$lib/server/db/schema';
 import { and, eq, sql } from 'drizzle-orm';
+import { logger, getRequestId } from '$lib/server/logger';
+
+// Helper to get current vote counts from recipe (O(1) instead of O(n))
+async function getVoteCounts(recipeId: string) {
+	const result = await db
+		.select({
+			upvotes: recipes.upvotes,
+			downvotes: recipes.downvotes
+		})
+		.from(recipes)
+		.where(eq(recipes.id, recipeId))
+		.limit(1);
+
+	return result[0] || { upvotes: 0, downvotes: 0 };
+}
+
+// Helper to atomically update vote counts using SQL increment/decrement
+// This is O(1) instead of O(n) - no need to recalculate all votes
+async function updateVoteCountsAtomic(
+	tx: { update: typeof db.update },
+	recipeId: string,
+	upvoteDelta: number,
+	downvoteDelta: number
+) {
+	await tx
+		.update(recipes)
+		.set({
+			upvotes: sql`${recipes.upvotes} + ${upvoteDelta}`,
+			downvotes: sql`${recipes.downvotes} + ${downvoteDelta}`,
+			voteScore: sql`${recipes.voteScore} + ${upvoteDelta} - ${downvoteDelta}`
+		})
+		.where(eq(recipes.id, recipeId));
+}
 
 export const POST: RequestHandler = async ({ request, locals }) => {
 	if (!locals.user) {
 		return json({ error: 'Unauthorized' }, { status: 401 });
 	}
 
+	const userId = locals.user.id;
 	const { recipeId, value } = await request.json();
 
 	if (!recipeId || typeof recipeId !== 'string') {
@@ -40,46 +74,62 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		const existingVote = await db
 			.select({ id: votes.id, value: votes.value })
 			.from(votes)
-			.where(and(eq(votes.userId, locals.user.id), eq(votes.recipeId, recipeId)))
+			.where(and(eq(votes.userId, userId), eq(votes.recipeId, recipeId)))
 			.limit(1);
 
 		if (existingVote.length > 0) {
-			// Update existing vote
-			if (existingVote[0].value === value) {
-				// Same vote - remove it (toggle off)
-				await db
-					.delete(votes)
-					.where(eq(votes.id, existingVote[0].id));
+			const oldValue = existingVote[0].value;
+			if (oldValue === value) {
+				// Same vote - remove it (toggle off) in a transaction
+				// Decrement the appropriate counter
+				const upvoteDelta = value > 0 ? -1 : 0;
+				const downvoteDelta = value < 0 ? -1 : 0;
 
-				// Get updated vote counts
+				await db.transaction(async (tx) => {
+					await tx.delete(votes).where(eq(votes.id, existingVote[0].id));
+					await updateVoteCountsAtomic(tx, recipeId, upvoteDelta, downvoteDelta);
+				});
+
 				const voteCounts = await getVoteCounts(recipeId);
 				return json({ success: true, userVote: null, ...voteCounts });
 			} else {
-				// Different vote - update it
-				await db
-					.update(votes)
-					.set({ value, createdAt: new Date() })
-					.where(eq(votes.id, existingVote[0].id));
+				// Different vote - update it in a transaction
+				// Old vote was opposite, so we need to flip both counters
+				const upvoteDelta = value > 0 ? 1 : -1; // +1 if new is upvote, -1 if removing upvote
+				const downvoteDelta = value < 0 ? 1 : -1; // +1 if new is downvote, -1 if removing downvote
 
-				// Get updated vote counts
+				await db.transaction(async (tx) => {
+					await tx
+						.update(votes)
+						.set({ value, createdAt: new Date() })
+						.where(eq(votes.id, existingVote[0].id));
+					await updateVoteCountsAtomic(tx, recipeId, upvoteDelta, downvoteDelta);
+				});
+
 				const voteCounts = await getVoteCounts(recipeId);
 				return json({ success: true, userVote: value, ...voteCounts });
 			}
 		} else {
-			// Create new vote
-			await db.insert(votes).values({
-				recipeId,
-				userId: locals.user.id,
-				value
+			// Create new vote in a transaction
+			// Increment the appropriate counter
+			const upvoteDelta = value > 0 ? 1 : 0;
+			const downvoteDelta = value < 0 ? 1 : 0;
+
+			await db.transaction(async (tx) => {
+				await tx.insert(votes).values({
+					recipeId,
+					userId,
+					value
+				});
+				await updateVoteCountsAtomic(tx, recipeId, upvoteDelta, downvoteDelta);
 			});
 
-			// Get updated vote counts
 			const voteCounts = await getVoteCounts(recipeId);
 			return json({ success: true, userVote: value, ...voteCounts });
 		}
 	} catch (error: unknown) {
-		console.error('Failed to process vote:', error);
-		return json({ error: 'Failed to process vote' }, { status: 500 });
+		logger.error('Failed to process vote', error, { recipeId, userId });
+		return json({ error: 'Failed to process vote', requestId: getRequestId() }, { status: 500 });
 	}
 };
 
@@ -88,6 +138,7 @@ export const DELETE: RequestHandler = async ({ request, locals }) => {
 		return json({ error: 'Unauthorized' }, { status: 401 });
 	}
 
+	const userId = locals.user.id;
 	const { recipeId } = await request.json();
 
 	if (!recipeId || typeof recipeId !== 'string') {
@@ -95,27 +146,35 @@ export const DELETE: RequestHandler = async ({ request, locals }) => {
 	}
 
 	try {
-		await db
-			.delete(votes)
-			.where(and(eq(votes.userId, locals.user.id), eq(votes.recipeId, recipeId)));
+		// First check what the existing vote was so we know which counter to decrement
+		const existingVote = await db
+			.select({ value: votes.value })
+			.from(votes)
+			.where(and(eq(votes.userId, userId), eq(votes.recipeId, recipeId)))
+			.limit(1);
 
-		// Get updated vote counts
+		if (existingVote.length === 0) {
+			// No vote to delete
+			const voteCounts = await getVoteCounts(recipeId);
+			return json({ success: true, userVote: null, ...voteCounts });
+		}
+
+		const oldValue = existingVote[0].value;
+		const upvoteDelta = oldValue > 0 ? -1 : 0;
+		const downvoteDelta = oldValue < 0 ? -1 : 0;
+
+		// Delete vote and update counts atomically
+		await db.transaction(async (tx) => {
+			await tx
+				.delete(votes)
+				.where(and(eq(votes.userId, userId), eq(votes.recipeId, recipeId)));
+			await updateVoteCountsAtomic(tx, recipeId, upvoteDelta, downvoteDelta);
+		});
+
 		const voteCounts = await getVoteCounts(recipeId);
 		return json({ success: true, userVote: null, ...voteCounts });
 	} catch (error: unknown) {
-		console.error('Failed to remove vote:', error);
-		return json({ error: 'Failed to remove vote' }, { status: 500 });
+		logger.error('Failed to remove vote', error, { recipeId, userId });
+		return json({ error: 'Failed to remove vote', requestId: getRequestId() }, { status: 500 });
 	}
 };
-
-async function getVoteCounts(recipeId: string) {
-	const result = await db
-		.select({
-			upvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} > 0 THEN 1 ELSE 0 END), 0)::int`,
-			downvotes: sql<number>`COALESCE(SUM(CASE WHEN ${votes.value} < 0 THEN 1 ELSE 0 END), 0)::int`
-		})
-		.from(votes)
-		.where(eq(votes.recipeId, recipeId));
-
-	return result[0] || { upvotes: 0, downvotes: 0 };
-}

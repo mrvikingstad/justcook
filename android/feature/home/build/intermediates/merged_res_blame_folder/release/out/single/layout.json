@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/layout/notification_template_part_time.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/layout/notification_template_part_chronometer.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/layout/ime_base_split_test_activity.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/layout/ime_base_split_test_activity.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/layout/custom_dialog.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/layout/ime_secondary_split_test_activity.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/layout/ime_secondary_split_test_activity.xml"
+    }
+]

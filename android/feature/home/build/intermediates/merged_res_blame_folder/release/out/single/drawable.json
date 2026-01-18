@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/notification_bg.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/abc_vector_test.xml",
+        "source": "com.justcook.feature.home-appcompat-resources-1.6.1-17:/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/ic_chef_hat.xml",
+        "source": "com.justcook.feature.home-packaged_res-53:/drawable/ic_chef_hat.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/notification_bg_low.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/notification_icon_background.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.justcook.feature.home-merged_res-58:/drawable/notification_tile_bg.xml",
+        "source": "com.justcook.feature.home-core-1.12.0-29:/drawable/notification_tile_bg.xml"
+    }
+]
