@@ -435,6 +435,14 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		}
 	}
 
-	logger.error('Failed to create recipe', lastError);
-	return json({ error: 'Failed to create recipe', requestId: getRequestId() }, { status: 500 });
+	// Log full error details for debugging
+	const errorMessage = lastError instanceof Error ? lastError.message : String(lastError);
+	const errorStack = lastError instanceof Error ? lastError.stack : undefined;
+	logger.error('Failed to create recipe', lastError, {
+		errorMessage,
+		errorStack,
+		userId,
+		title: sanitizedTitle
+	});
+	return json({ error: 'Failed to create recipe', requestId: getRequestId(), debug: errorMessage }, { status: 500 });
 };

@@ -66,9 +66,8 @@ export const GET: RequestHandler = async ({ url }) => {
 		cacheKeys.discover(lang),
 		'discover',
 		async () => {
-			// Use ISO strings for PostgreSQL compatibility (Date.toString() produces unparseable format)
 			const now = new Date();
-			const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString();
+			const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
 
 			// First get trending recipe IDs to exclude them
 			const trendingRecipes = await db
